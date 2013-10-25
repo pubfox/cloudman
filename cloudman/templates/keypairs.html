@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>SSH密钥 key pairs</h1>
+      <p class="lead">该功能仅对 Linux 主机有效。青云官方提供的 Linux 映像是不允许使用密码来 SSH 登录的，只接受 SSH 公钥/私钥验证身份。您可以新建一个 <em>SSH 密钥</em>，并立刻下载其私钥。请保管好私钥，因为青云是不保存您的私钥的。</p>
+    </div>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a><a class="btn" href="#"><span class="icon icon-create"></span><span class="text">新建</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-keypairs"></span><span class="text">加载到主机</span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th>ID</th>
+            <th>名称</th>
+            <th>
+              加密方法
+              <div class="dropdown">
+                <input class="dropdown-toggle" type="text">
+                <div class="dropdown-text"></div>
+                <div class="dropdown-content"><a href="#" data-filter="encrypt_method" data-encrypt_method="ssh-rsa,ssh-dss">全部</a><a href="#" data-filter="encrypt_method" data-encrypt_method="ssh-rsa">ssh-rsa</a><a href="#" data-filter="encrypt_method" data-encrypt_method="ssh-dss">ssh-dss</a></div>
+              </div>
+            </th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="kp-5hnzkm5d">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/keypairs/kp-5hnzkm5d/" data-permalink="">kp-5hnzkm5d</a></td>
+            <td>ttttt</td>
+            <td>ssh-dss</td>
+            <td class="time">2013-10-25 14:35:45</td>
+          </tr>
+          <tr id="kp-plufg6xg">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/keypairs/kp-plufg6xg/" data-permalink="">kp-plufg6xg</a></td>
+            <td>ttt</td>
+            <td>ssh-rsa</td>
+            <td class="time">2013-10-25 14:35:25</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

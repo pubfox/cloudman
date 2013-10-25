@@ -1,0 +1,7 @@
+<div class="nav-collapse sidebar-nav">
+	<ul class="nav nav-tabs nav-stacked main-menu">
+		{% for sidebar in sidebars %}
+			<li><a href="{{ sidebar['url'] }}"><i class="fa-icon-{{ sidebar['icon'] }}"></i><span class="hidden-tablet">{{ sidebar['name'] }}</span></a></li>
+		{% end %}
+	</ul>
+</div>

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>API密钥 access keys</h1>
+      <p class="lead">API 密钥可以让您通过发送 API 指令来访问我们的服务。API 密钥 ID 将作为参数包含在每一个请求中发送；而 API 密钥的私钥负责生成 API 请求串的签名，私钥需要被妥善保管，请勿外传。更多内容可以参见 <a href="https://docs.qingcloud.com" target="_blank">API 文档</a>。</p>
+    </div>
+    <div class="global-quota">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td>API密钥数配额：2 个&nbsp;<span class="none">（已使用：2 个）</span></td>
+            <td>请求频率配额：60 次 / 1800 秒&nbsp;<span class="none">（已请求：0 次）</span></td>
+            <td><a class="btn-open-ticket" href="#">申请提高</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a><a class="btn" href="#"><span class="icon icon-create"></span><span class="text">新建</span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-activate"></span><span class="text">激活</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-inactivate"></span><span class="text">暂停</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th>密钥ID</th>
+            <th>密钥名称</th>
+            <th>状态</th>
+            <th>密钥描述</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="MJFMPGKYXCLDGNQPIDER">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><span class="id">MJFMPGKYXCLDGNQPIDER</span></td>
+            <td>tt</td>
+            <td class="active"><span class="icon-status icon-active"></span>&nbsp; 活跃</td>
+            <td></td>
+            <td class="time">2013-10-25 10:37:08</td>
+          </tr>
+          <tr id="PLEDYKYMDIBIMDFTRQYX">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><span class="id">PLEDYKYMDIBIMDFTRQYX</span></td>
+            <td>tt</td>
+            <td class="active"><span class="icon-status icon-active"></span>&nbsp; 活跃</td>
+            <td></td>
+            <td class="time">2013-10-25 10:36:29</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

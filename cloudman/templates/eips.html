@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>公网IP elastic IPs</h1>
+      <p class="lead"><em>公网 IP </em>地址是在互联网上合法的静态 IP 地址。在青云系统中，公网 IP 地址与您的账户而非特定的资源（主机或路由器）关联，您可以将申请到的公网 IP 地址分配到任意位于基础私有网络 vxnet-0 中的主机或路由器，并随时可以解绑、再分配到其他主机或路由器，如此可以快速替换您的对外主机或路由器。</p>
+    </div>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a><a class="btn" href="#"><span class="icon icon-allocate"></span><span class="text">申请</span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">设置ICP备案信息</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-instance"></span><span class="text">分配到主机</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-router"></span><span class="text">分配到路由器</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-dissociate"></span><span class="text">解绑</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-bandwidth"></span><span class="text">改变带宽</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-release"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th>ID</th>
+            <th>名称</th>
+            <th>地址</th>
+            <th>ICP备案</th>
+            <th>
+              状态
+              <div class="dropdown">
+                <input class="dropdown-toggle" type="text">
+                <div class="dropdown-text"></div>
+                <div class="dropdown-content"><a href="#" data-filter="status" data-status="pending,available,associated,suspended">全部</a><a href="#" data-filter="status" data-status="pending">等待中</a><a href="#" data-filter="status" data-status="available">可用</a><a href="#" data-filter="status" data-status="associated">已分配</a><a href="#" data-filter="status" data-status="suspended">已暂停</a><a href="#" data-filter="status" data-status="released,ceased">已删除</a></div>
+              </div>
+            </th>
+            <th>应用资源</th>
+            <th>带宽 (Mbps)</th>
+            <th>IP分组</th>
+            <th>运行时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="eip-a0fqazrn">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/eips/eip-a0fqazrn/" data-permalink="">eip-a0fqazrn</a></td>
+            <td>t</td>
+            <td>117.121.25.180</td>
+            <td>
+              <div class="icp-codes"></div>
+            </td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td></td>
+            <td>1</td>
+            <td>BGP多线</td>
+            <td class="time">11 分钟</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper">
+    <div class="activity">
+      <div class="page-intro">
+        <h1>操作日志 activities</h1>
+        <p class="lead"></p>
+      </div>
+      <ul class="page-tabs">
+        <li class="selected"><a href="/activities/all/" data-permalink=""><span class="icon icon-all"></span>全部</a></li>
+        <li class=""><a href="/activities/pending/" data-permalink=""><span class="icon icon-pending"></span>等待中</a></li>
+        <li class=""><a href="/activities/working/" data-permalink=""><span class="icon icon-working"></span>执行中</a></li>
+        <li class=""><a href="/activities/successful/" data-permalink=""><span class="icon icon-successful"></span>成功</a></li>
+        <li class=""><a href="/activities/failed/" data-permalink=""><span class="icon icon-failed"></span>失败</a></li>
+      </ul>
+      <div class="hd">
+        <h3>操作日志<small> (38)</small></h3>
+      </div>
+      <div class="bd">
+        <ol>
+          <li class="activity-item successful on" id="j-b67j7vwf">
+            <span href="#" class="icon icon-action icon-DeleteImages"><span class="arrow"></span></span><a class="message" href="#" data-job-action="DeleteImages">删除映像</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:54:02</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒之内</span>
+            <dl class="dl-horizontal">
+              <dt>映像 :</dt>
+              <dd><a class="id" href="/images/img-3lynnnnx/">img-3lynnnnx</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful on" id="j-sv71ufbu">
+            <span href="#" class="icon icon-action icon-TerminateInstances"><span class="arrow"></span></span><a class="message" href="#" data-job-action="TerminateInstances">销毁主机</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:53:48</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 3秒</span>
+            <dl class="dl-horizontal">
+              <dt>主机 :</dt>
+              <dd><a class="id" href="/instances/i-ixg0oj51/">i-ixg0oj51</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful on" id="j-2z02omq9">
+            <span href="#" class="icon icon-action icon-CaptureInstance"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CaptureInstance">制作新映像</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:48:14</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 11秒</span>
+            <dl class="dl-horizontal">
+              <dt>主机 :</dt>
+              <dd><a class="id" href="/instances/i-ixg0oj51/">i-ixg0oj51</a></dd>
+              <dt>映像 :</dt>
+              <dd><a class="id" href="/images/img-3lynnnnx/">img-3lynnnnx</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful on" id="j-2yecw8xg">
+            <span href="#" class="icon icon-action icon-StopInstances"><span class="arrow"></span></span><a class="message" href="#" data-job-action="StopInstances">关机</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:47:30</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 27秒</span>
+            <dl class="dl-horizontal">
+              <dt>主机 :</dt>
+              <dd><a class="id" href="/instances/i-ixg0oj51/">i-ixg0oj51</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful" id="j-afjfcvi6">
+            <span href="#" class="icon icon-action icon-RunInstances"><span class="arrow"></span></span><a class="message" href="#" data-job-action="RunInstances">创建新主机</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:47:19</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 7秒</span>
+            <dl class="dl-horizontal">
+              <dt>主机 :</dt>
+              <dd><a class="id" href="/instances/i-ixg0oj51/">i-ixg0oj51</a></dd>
+              <dt>主机类型:</dt>
+              <dd>小型A</dd>
+              <dt>映像ID:</dt>
+              <dd><a class="id" href="/images/precisex64a/">precisex64a</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful" id="j-eorztq5p">
+            <span href="#" class="icon icon-action icon-ReleaseEips"><span class="arrow"></span></span><a class="message" href="#" data-job-action="ReleaseEips">删除公网IP</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:32:24</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒之内</span>
+            <dl class="dl-horizontal">
+              <dt>公网IP :</dt>
+              <dd><a class="id" href="/eips/eip-a0fqazrn/">eip-a0fqazrn</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful" id="j-qvz8uyt7">
+            <span href="#" class="icon icon-action icon-DeleteRouters"><span class="arrow"></span></span><a class="message" href="#" data-job-action="DeleteRouters">删除路由器</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:18:32</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 3秒</span>
+            <dl class="dl-horizontal">
+              <dt>路由器 :</dt>
+              <dd><a class="id" href="/routers/rtr-h0cbjxg6/">rtr-h0cbjxg6</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful" id="j-w99isij3">
+            <span href="#" class="icon icon-action icon-CreateRouters"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CreateRouters">创建路由器</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:05:26</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 6秒</span>
+            <dl class="dl-horizontal">
+              <dt>防火墙 :</dt>
+              <dd><a class="id" href="/security_groups/sg-wnglmnje/">sg-wnglmnje</a></dd>
+              <dt>路由器 :</dt>
+              <dd><a class="id" href="/routers/rtr-h0cbjxg6/">rtr-h0cbjxg6</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful" id="j-idxc1rap">
+            <span href="#" class="icon icon-action icon-DeleteVolumes"><span class="arrow"></span></span><a class="message" href="#" data-job-action="DeleteVolumes">删除硬盘</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 14:05:10</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒</span>
+            <dl class="dl-horizontal">
+              <dt>硬盘 :</dt>
+              <dd><a class="id" href="/volumes/vol-7sl0us9s/">vol-7sl0us9s</a></dd>
+            </dl>
+          </li>
+          <li class="activity-item successful" id="j-v69x5eiz">
+            <span href="#" class="icon icon-action icon-CreateVolumes"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CreateVolumes">创建硬盘</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 13:56:16</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 2秒</span>
+            <dl class="dl-horizontal">
+              <dt>硬盘 :</dt>
+              <dd><a class="id" href="/volumes/vol-7sl0us9s/">vol-7sl0us9s</a></dd>
+              <dt>大小:</dt>
+              <dd>10 GB</dd>
+            </dl>
+          </li>
+        </ol>
+      </div>
+      <div class="ft" style=""><a class="btn btn-more">加载更多...</a></div>
+    </div>
+  </div>
+</div>
+
+{% end %}

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper dashboard">
+    <div id="zone" class="grid_6">
+      <h1><span class="icon-zone"></span><strong>pek1</strong></h1>
+    </div>
+    <div class="grid_18 dashboard-account">
+      <div class="grid_18 charge">消费总额:<a class="charge-total" href="/consumptions/" data-permalink="">1.1299</a><span class="unit">元</span>账户余额:<a class="balance-total" href="https://www.qingcloud.com/account" target="_blank">0.8701</a><span class="unit">元</span></div>
+      <div class="grid_6 quotas"><a class="btn btn-show-quotas" href="#"><span class="icon icon-view"></span>&nbsp;查看资源配额</a></div>
+    </div>
+    <div id="resource_summary">
+      <div class="grid_6 resource-summary-item" data-type="instance">
+        <strong title="已使用">1</strong>
+        <h5><span class="icon-instance"></span>主机</h5>
+      </div>
+      <div class="grid_6 resource-summary-item" data-type="volume">
+        <strong title="已使用">0</strong>
+        <h5><span class="icon-volume"></span>硬盘</h5>
+      </div>
+      <div class="grid_6 resource-summary-item" data-type="router">
+        <strong title="已使用">0</strong>
+        <h5><span class="icon-router"></span>路由器</h5>
+      </div>
+      <div class="grid_6 resource-summary-item" data-type="vxnet">
+        <strong title="已使用">0</strong>
+        <h5><span class="icon-vxnet"></span>私有网络</h5>
+      </div>
+      <div class="grid_6 resource-summary-item" data-type="eip">
+        <strong title="已使用">0</strong>
+        <h5><span class="icon-eip"></span>公网IP</h5>
+      </div>
+      <div class="grid_6 resource-summary-item" data-type="security_group">
+        <strong title="已使用">1</strong>
+        <h5><span class="icon-security_group"></span>防火墙</h5>
+      </div>
+      <div class="grid_6 resource-summary-item" data-type="keypair">
+        <strong title="已使用">0</strong>
+        <h5><span class="icon-keypair"></span>SSH密钥</h5>
+      </div>
+      <div class="grid_6 resource-summary-item" data-type="image">
+        <strong title="已使用">0</strong>
+        <h5><span class="icon-image"></span>映像</h5>
+      </div>
+    </div>
+    <div id="activity" class="grid_12 dashboard-activity">
+      <h4><a href="/activities/" data-permalink="">最近操作</a></h4>
+      <div class="inner">
+        <div class="activity-item"><span href="#" class="icon icon-action icon-RunInstances"><span class="arrow"></span></span><span class="message">创建新主机</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 11:52:53</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 6秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-DeleteImages"><span class="arrow"></span></span><span class="message">删除映像</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:28:59</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-ReleaseEips"><span class="arrow"></span></span><span class="message">删除公网IP</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:28:28</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-DeleteRouters"><span class="arrow"></span></span><span class="message">删除路由器</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:28:09</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 5秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-TerminateInstances"><span class="arrow"></span></span><span class="message">销毁主机</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:28:00</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 4秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-CaptureInstance"><span class="arrow"></span></span><span class="message">制作新映像</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:21:19</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 11秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-StopInstances"><span class="arrow"></span></span><span class="message">关机</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:21:00</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 8秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-ApplySecurityGroup"><span class="arrow"></span></span><span class="message">加载防火墙规则</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:15:26</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 2秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-UpdateRouters"><span class="arrow"></span></span><span class="message">更新路由器</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:10:13</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 7秒</span></div>
+        <div class="activity-item"><span href="#" class="icon icon-action icon-UpdateRouters"><span class="arrow"></span></span><span class="message">更新路由器</span><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-25 10:09:19</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 6秒</span></div>
+      </div>
+    </div>
+    <div id="ticket" class="grid_12">
+      <h4><a href="/tickets/" data-permalink="">最新问题</a></h4>
+      <div class="inner">
+        <div class="ticket-item">
+          <h6><a href="/tickets/tk-pt0zmdp5/" data-permalink="">怎么没有xp呢</a><small>(1)</small><br><span class="time">2013-10-25 10:35:24</span></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

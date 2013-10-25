@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>网络 networks</h1>
+      <p class="lead">通过青云的SDN（软件定义网络）技术，您可以快速地搭建您专属的私有云环境。相比于基础网络而言，这个网络可以提供100%的安全隔离，而且有丰富的工具帮助您进行自动化管理。<br>要使用青云网络，请创建一个路由器，然后再创建一个或多个私有网络并连接到这个路由器，最后创建主机并加入到这些私有网络即可。</p>
+    </div>
+    <ul class="page-tabs">
+      <li class=""><a href="/networks/routers/" data-permalink=""><span class="icon icon-routers"></span>路由器</a></li>
+      <li class="selected"><a href="/networks/vxnets/" data-permalink=""><span class="icon icon-vxnets"></span>私有网络</a></li>
+    </ul>
+    <div class="pane-intro">私有网络用于主机之间互联，它类似物理世界中使用交换机（L2 Switch）组成的局域网。私有网络之间是100%隔离的。</div>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a><a class="btn" href="#"><span class="icon icon-create"></span><span class="text">新建</span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-instances"></span><span class="text">添加主机</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-router"></span><span class="text">连接路由器</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-router"></span><span class="text">断开路由器</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th width="20%">ID</th>
+            <th>名称</th>
+            <th>路由器</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="vxnet-psd8iq0">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/networks/vxnets/vxnet-psd8iq0/" data-permalink="">vxnet-psd8iq0</a></td>
+            <td>t</td>
+            <td></td>
+            <td class="time">2013-10-25 14:09:18</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

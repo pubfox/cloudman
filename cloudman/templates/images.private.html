@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>映像 images</h1>
+      <p class="lead"><em>映像 (Image) </em>是带有操作系统的主机模板。青云官方会提供主流的 Linux、Windows 模板，并根据上游厂商更新版本时及时制作新模板。用户也可以在将自己名下的主机制作成模板，以备后用。</p>
+    </div>
+    <ul class="page-tabs">
+      <li class=""><a href="/images/system/" data-permalink=""><span class="icon icon-system"></span>系统</a></li>
+      <li class="selected"><a href="/images/self/" data-permalink=""><span class="icon icon-self"></span>自有</a></li>
+    </ul>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th>ID</th>
+            <th width="30%">名称</th>
+            <th>
+              状态
+              <div class="dropdown">
+                <input class="dropdown-toggle" type="text">
+                <div class="dropdown-text"></div>
+                <div class="dropdown-content"><a href="#" data-filter="status" data-status="available,pending,suspended">全部</a><a href="#" data-filter="status" data-status="available">可用</a><a href="#" data-filter="status" data-status="pending">等待中</a><a href="#" data-filter="status" data-status="suspended">已暂停</a><a href="#" data-filter="status" data-status="deleted,ceased">已删除</a></div>
+              </div>
+            </th>
+            <th>文件大小 (G)</th>
+            <th>平台</th>
+            <th>可见范围</th>
+            <th>运行时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="img-3lynnnnx">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/images/self/img-3lynnnnx/" data-permalink="">img-3lynnnnx</a></td>
+            <td>tttt</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>私有</td>
+            <td class="time" title="2013-10-25 14:48:25">几秒钟</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

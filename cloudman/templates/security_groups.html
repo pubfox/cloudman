@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>防火墙 security groups</h1>
+      <p class="lead">为了加强位于基础网络 vxnet-0 中的主机或路由器的安全性，可以在主机或路由器之前放置一个<em>防火墙 (Security Group)</em>。青云系统为每个用户提供了一个缺省防火墙（ID 之后带有星标），当然，您也可以新建更多的防火墙。初始状态下，每个防火墙都不包含任何规则，即，任何端口都是封闭的，您需要建立规则以打开相应的端口。</p>
+    </div>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a><a class="btn" href="#"><span class="icon icon-create"></span><span class="text">新建</span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-security_groups"></span><span class="text">加载规则到主机</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th>ID</th>
+            <th>名称</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="sg-eawqo887">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/security_groups/sg-eawqo887/" data-permalink="">sg-eawqo887</a></td>
+            <td>ttt</td>
+            <td class="time">2013-10-25 14:32:31</td>
+          </tr>
+          <tr id="sg-wnglmnje">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/security_groups/sg-wnglmnje/" data-permalink="">sg-wnglmnje</a><span class="tooltip" title="缺省防火墙，不可以删除"><span class="icon-default"></span></span></td>
+            <td>缺省防火墙</td>
+            <td class="time">2013-10-24 14:54:28</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

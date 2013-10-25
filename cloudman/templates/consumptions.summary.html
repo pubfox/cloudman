@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper">
+    <div class="page-intro">
+      <h1>消费记录 consumptions</h1>
+      <p class="lead"></p>
+    </div>
+    <ul class="page-tabs">
+      <li class="selected"><a href="/consumptions/summary/" data-permalink=""><span class="icon icon-summary"></span>摘要</a></li>
+      <li class=""><a href="/consumptions/query/" data-permalink=""><span class="icon icon-query"></span>查询</a></li>
+    </ul>
+    <div id="summary" class="pane">
+      <div class="charge-summary">
+        <h1>总消费额:&nbsp;&nbsp;<span class="total_sum price">1.1722</span><span class="unit">元</span><small><a href="https://www.qingcloud.com/account" target="_blank">查看帐户余额</a></small></h1>
+        <a class="summary-item selected"><span class="count">主机&nbsp;(5)</span><span class="sum price">0.4371<span class="unit">元</span></span></a><a class="summary-item"><span class="count">路由器&nbsp;(3)</span><span class="sum price">0.039<span class="unit">元</span></span></a><a class="summary-item"><span class="count">硬盘&nbsp;(3)</span><span class="sum price">0.093<span class="unit">元</span></span></a><a class="summary-item"><span class="count">映像&nbsp;(2)</span><span class="sum price">0.0087<span class="unit">元</span></span></a><a class="summary-item"><span class="count">公网IP&nbsp;(3)</span><span class="sum price">0.5944<span class="unit">元</span></span></a>
+      </div>
+      <div class="charge-resources">
+        <div class="charge-resources-table">
+          <div class="page">
+            <div class="pagination"></div>
+          </div>
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>名称</th>
+                <th>状态</th>
+                <th class="right">金额(元)</th>
+                <th class="right">单价</th>
+                <th>创建时间</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a class="id" id="i-tfrr8olf" href="#">i-tfrr8olf</a></td>
+                <td>tt</td>
+                <td>已销毁</td>
+                <td class="right"><span class="out price">– 0.0028</span></td>
+                <td class="right"><span class="price">0.06</span><span class="unit">元/小时</span></td>
+                <td class="time">2013-10-25 15:17:45</td>
+                <td><a href="#">查看详情</a></td>
+              </tr>
+              <tr>
+                <td><a class="id" id="i-ixg0oj51" href="#">i-ixg0oj51</a></td>
+                <td>tt</td>
+                <td>已销毁</td>
+                <td class="right"><span class="out price">– 0.0041</span></td>
+                <td class="right"><span class="price">0.04</span><span class="unit">元/小时</span></td>
+                <td class="time">2013-10-25 14:47:26</td>
+                <td><a href="#">查看详情</a></td>
+              </tr>
+              <tr>
+                <td><a class="id" id="i-tb8q8p5m" href="#">i-tb8q8p5m</a></td>
+                <td>t</td>
+                <td>已销毁</td>
+                <td class="right"><span class="out price">– 0.123</span></td>
+                <td class="right"><span class="price">0.04</span><span class="unit">元/小时</span></td>
+                <td class="time">2013-10-25 11:52:59</td>
+                <td><a href="#">查看详情</a></td>
+              </tr>
+              <tr>
+                <td><a class="id" id="i-agvf2xb8" href="#">i-agvf2xb8</a></td>
+                <td>tt</td>
+                <td>已销毁</td>
+                <td class="right"><span class="out price">– 0.0334</span></td>
+                <td class="right"><span class="price">0.04</span><span class="unit">元/小时</span></td>
+                <td class="time">2013-10-25 09:52:18</td>
+                <td><a href="#">查看详情</a></td>
+              </tr>
+              <tr>
+                <td><a class="id" id="i-3zylre2o" href="#">i-3zylre2o</a></td>
+                <td>ttt</td>
+                <td>已销毁</td>
+                <td class="right"><span class="out price">– 0.2738</span></td>
+                <td class="right"><span class="price">0.06</span><span class="unit">元/小时</span></td>
+                <td class="time">2013-10-24 14:57:54</td>
+                <td><a href="#">查看详情</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

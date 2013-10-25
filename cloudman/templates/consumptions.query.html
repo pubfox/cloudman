@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper">
+    <div class="page-intro">
+      <h1>消费记录 consumptions</h1>
+      <p class="lead"></p>
+    </div>
+    <ul class="page-tabs">
+      <li class=""><a href="/consumptions/summary/" data-permalink=""><span class="icon icon-summary"></span>摘要</a></li>
+      <li class="selected"><a href="/consumptions/query/" data-permalink=""><span class="icon icon-query"></span>查询</a></li>
+    </ul>
+    <div id="query" class="pane">
+      <div class="query-bar">
+        <h2>选择查询条件</h2>
+        <form class="form form-horizontal">
+          <div class="item">
+            <div class="control-label">资源类型</div>
+            <div class="controls"><label class="inline"><input type="radio" value="" name="resource_type" checked="">全部</label><label class="inline"><input type="radio" value="instance" name="resource_type">主机</label><label class="inline"><input type="radio" value="volume" name="resource_type">硬盘</label><label class="inline"><input type="radio" value="router" name="resource_type">路由器</label><label class="inline"><input type="radio" value="image" name="resource_type">映像</label><label class="inline"><input type="radio" value="eip" name="resource_type">公网IP</label></div>
+          </div>
+          <div class="item">
+            <div class="control-label">月份</div>
+            <div class="controls"><input type="text" value="2013-10" name="start_time"></div>
+          </div>
+          <div class="item">
+            <div class="control-label">资源ID</div>
+            <div class="controls"><input type="text" name="resource"></div>
+          </div>
+          <div class="form-actions"><input class="btn btn-primary" type="submit" value="查询"><input class="btn btn-cancel" type="reset" value="重置"></div>
+        </form>
+      </div>
+      <div class="query-result">
+        <h3>查询结果</h3>
+        <div class="records">
+          <div>
+            <div class="title">
+              <h4>总计：<span class="price">1.1722</span> <span class="unit">元</span></h4>
+            </div>
+            <div class="page">
+              <div class="pagination"><span class="current">每页&nbsp;<input type="text" name="limit" class="tiny" value="10">&nbsp;个&nbsp;页数 1 / 2</span><a class="btn prev btn-forbidden" data-direction="prev"><span class="icon-prev" data-direction="prev"></span></a><a class="btn next btn-" data-direction="next"><span class="icon-next" data-direction="next"></span></a></div>
+            </div>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>资源ID</th>
+                  <th>计费时长</th>
+                  <th class="right">金额(元)</th>
+                  <th class="right">单价</th>
+                  <th width="30%">备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a class="id" href="/instances/i-tfrr8olf/" data-permalink="">i-tfrr8olf</a></td>
+                  <td class="time">2013-10-25 15:17:45<br>2013-10-25 15:20:32</td>
+                  <td class="right"><span class="price out">– 0.0028</span></td>
+                  <td class="right"><span class="price">0.06</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/routers/rtr-p3hhmnd5/" data-permalink="">rtr-p3hhmnd5</a></td>
+                  <td class="time">2013-10-25 15:12:36<br>2013-10-25 15:22:22</td>
+                  <td class="right"><span class="price out">– 0.0081</span></td>
+                  <td class="right"><span class="price">0.05</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/images/img-3lynnnnx/" data-permalink="">img-3lynnnnx</a></td>
+                  <td class="time">2013-10-25 14:48:25<br>2013-10-25 14:54:02</td>
+                  <td class="right"><span class="price out">– 0.0037</span></td>
+                  <td class="right"><span class="price">0.04</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/instances/i-ixg0oj51/" data-permalink="">i-ixg0oj51</a></td>
+                  <td class="time">2013-10-25 14:47:57<br>2013-10-25 14:53:49</td>
+                  <td class="right"><span class="price out">– 0.0039</span></td>
+                  <td class="right"><span class="price">0.04</span><span class="unit">元/小时</span></td>
+                  <td class="time">主机已关机，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/instances/i-ixg0oj51/" data-permalink="">i-ixg0oj51</a></td>
+                  <td class="time">2013-10-25 14:47:47<br>2013-10-25 14:47:57</td>
+                  <td class="right"><span class="price out">– 0.0002</span></td>
+                  <td class="right"><span class="price">0.06</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/eips/eip-a0fqazrn/" data-permalink="">eip-a0fqazrn</a></td>
+                  <td class="time">2013-10-25 14:18:50<br>2013-10-25 14:32:24</td>
+                  <td class="right"><span class="price out">– 0.0068</span></td>
+                  <td class="right"><span class="price">0.03</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/routers/rtr-h0cbjxg6/" data-permalink="">rtr-h0cbjxg6</a></td>
+                  <td class="time">2013-10-25 14:05:32<br>2013-10-25 14:18:32</td>
+                  <td class="right"><span class="price out">– 0.0108</span></td>
+                  <td class="right"><span class="price">0.05</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/volumes/vol-7sl0us9s/" data-permalink="">vol-7sl0us9s</a></td>
+                  <td class="time">2013-10-25 13:56:18<br>2013-10-25 14:05:11</td>
+                  <td class="right"><span class="price out">– 0.003</span></td>
+                  <td class="right"><span class="price">0.02</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/instances/i-tb8q8p5m/" data-permalink="">i-tb8q8p5m</a></td>
+                  <td class="time">2013-10-25 13:55:54<br>2013-10-25 13:56:03</td>
+                  <td class="right"><span class="price out">– 0.0001</span></td>
+                  <td class="right"><span class="price">0.04</span><span class="unit">元/小时</span></td>
+                  <td class="time">主机已关机，系统扣费</td>
+                </tr>
+                <tr>
+                  <td><a class="id" href="/instances/i-tb8q8p5m/" data-permalink="">i-tb8q8p5m</a></td>
+                  <td class="time">2013-10-25 11:52:59<br>2013-10-25 13:55:54</td>
+                  <td class="right"><span class="price out">– 0.1229</span></td>
+                  <td class="right"><span class="price">0.06</span><span class="unit">元/小时</span></td>
+                  <td class="time">资源已创建，系统扣费</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

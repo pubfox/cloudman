@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=1300">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <title>控制台</title>
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="modal-ready modal-open">
+    <div class="container">
+      <div class="viewport" id="console">
+        <div class="navigation" style="">
+          <div class="wrapper">
+            <div class="navigation-profile">
+              <a class="avatar" href="/profile/" style="background-image: url('https://www.gravatar.com/avatar/483f7dabec932b033892c33381f95044?s=80&amp;d=')" target="_blank"></a>
+              <p class="user-name"><a href="/profile/" target="_blank">jean2001</a></p>
+              <p class="user-links"><a class="icon icon-home" title="首页" href="/"></a><a class="icon icon-console" title="控制台" href="/" data-permalink=""></a><a class="icon icon-account" title="帐户充值" href="/account/"></a><a class="icon icon-logout" title="退出登录" href="/logout/"></a></p>
+            </div>
+            <div class="navigation-permission">
+              <h5>RESOURCES<a class="guidelines" href="/guide/" target="_blank"><span class="icon icon-guidelines"></span>&nbsp;用户指南</a></h5>
+              <ul>
+                <li class="item instances"><a href="/instances/" data-permalink=""><span class="icon icon-instances"></span>主机<span class="title">Instances</span></a></li>
+                <li class="item volumes"><a href="/volumes/" data-permalink=""><span class="icon icon-volumes"></span>硬盘<span class="title">Volumes</span></a></li>
+                <li class="item networks"><a href="/networks/" data-permalink=""><span class="icon icon-networks"></span>网络<span class="title">Networks</span></a></li>
+                <li class="item eips"><a href="/eips/" data-permalink=""><span class="icon icon-eips"></span>公网IP<span class="title">Elastic IPs</span></a></li>
+                <li class="item security_groups"><a href="/security_groups/" data-permalink=""><span class="icon icon-security_groups"></span>防火墙<span class="title">Security Groups</span></a></li>
+                <li class="item keypairs"><a href="/keypairs/" data-permalink=""><span class="icon icon-keypairs"></span>SSH密钥<span class="title">Key Pairs</span></a></li>
+                <li class="item images"><a href="/images/" data-permalink=""><span class="icon icon-images"></span>映像<span class="title">Images</span></a></li>
+              </ul>
+              <h5>OTHERS</h5>
+              <ul class="level1">
+                <li class="item activities"><a href="/activities/" data-permalink=""><span class="icon icon-activities"></span>操作日志<span class="title">Activities</span></a></li>
+                <li class="item consumptions"><a href="/consumptions/" data-permalink=""><span class="icon icon-consumptions"></span>消费记录<span class="title">Consumptions</span></a></li>
+                <li class="item tickets"><a href="/tickets/" data-permalink=""><span class="icon icon-tickets"></span>工单<span class="title">Tickets</span></a></li>
+                <li class="item access_keys"><a href="/access_keys/" data-permalink=""><span class="icon icon-access_keys"></span>API密钥<span class="title">Access Keys</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% block body %}{% end %}
+        <div class="notify" style=""></div>
+      </div>
+    </div>
+  </body>
+</html>

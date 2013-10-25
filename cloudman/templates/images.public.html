@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>映像 images</h1>
+      <p class="lead"><em>映像 (Image) </em>是带有操作系统的主机模板。青云官方会提供主流的 Linux、Windows 模板，并根据上游厂商更新版本时及时制作新模板。用户也可以在将自己名下的主机制作成模板，以备后用。</p>
+    </div>
+    <ul class="page-tabs">
+      <li class="selected"><a href="/images/system/" data-permalink=""><span class="icon icon-system"></span>系统</a></li>
+      <li class=""><a href="/images/self/" data-permalink=""><span class="icon icon-self"></span>自有</a></li>
+    </ul>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"><span class="current">每页&nbsp;<input type="text" name="limit" class="tiny" value="10">&nbsp;个&nbsp;页数 1 / 2</span><a class="btn prev btn-forbidden" data-direction="prev"><span class="icon-prev" data-direction="prev"></span></a><a class="btn next btn-" data-direction="next"><span class="icon-next" data-direction="next"></span></a></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th width="30%">名称</th>
+            <th>
+              状态
+              <div class="dropdown">
+                <input class="dropdown-toggle" type="text">
+                <div class="dropdown-text"></div>
+                <div class="dropdown-content"><a href="#" data-filter="status" data-status="available,deprecated">全部</a><a href="#" data-filter="status" data-status="available">可用</a><a href="#" data-filter="status" data-status="deprecated">弃用</a></div>
+              </div>
+            </th>
+            <th>文件大小 (G)</th>
+            <th>平台</th>
+            <th>可见范围</th>
+            <th>运行时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="arch201310x64">
+            <td><a class="id" href="/images/system/arch201310x64/" data-permalink="">arch201310x64</a></td>
+            <td>Arch Linux 2013.10 64bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-10-20 23:55:45">5 天</td>
+          </tr>
+          <tr id="saucysrvx64">
+            <td><a class="id" href="/images/system/saucysrvx64/" data-permalink="">saucysrvx64</a></td>
+            <td>Ubuntu Server 13.10 64bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-10-20 00:15:45">6 天</td>
+          </tr>
+          <tr id="centos63x64">
+            <td><a class="id" href="/images/system/centos63x64/" data-permalink="">centos63x64</a></td>
+            <td>CentOS 6.3 64bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-10-16 01:06:52">10 天</td>
+          </tr>
+          <tr id="opensuse12x64">
+            <td><a class="id" href="/images/system/opensuse12x64/" data-permalink="">opensuse12x64</a></td>
+            <td>openSUSE 12.3 64bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-10-07 14:16:00">18 天</td>
+          </tr>
+          <tr id="centos64x86">
+            <td><a class="id" href="/images/system/centos64x86/" data-permalink="">centos64x86</a></td>
+            <td>CentOS 6.4 32bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-10-02 00:16:13">24 天</td>
+          </tr>
+          <tr id="win2k8r2eeen">
+            <td><a class="id" href="/images/system/win2k8r2eeen/" data-permalink="">win2k8r2eeen</a></td>
+            <td>Windows Server 2008 R2 英文 企业版 64位 未激活</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>50</td>
+            <td>windows</td>
+            <td>公用</td>
+            <td class="time" title="2013-08-21 15:19:58">2 个月</td>
+          </tr>
+          <tr id="win2k8r2eechs">
+            <td><a class="id" href="/images/system/win2k8r2eechs/" data-permalink="">win2k8r2eechs</a></td>
+            <td>Windows Server 2008 R2 简体中文 企业版 64位 未激活</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>50</td>
+            <td>windows</td>
+            <td>公用</td>
+            <td class="time" title="2013-08-20 09:04:45">2 个月</td>
+          </tr>
+          <tr id="centos58x86">
+            <td><a class="id" href="/images/system/centos58x86/" data-permalink="">centos58x86</a></td>
+            <td>CentOS 5.8 32bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-08-01 00:46:10">3 个月</td>
+          </tr>
+          <tr id="centos58x64">
+            <td><a class="id" href="/images/system/centos58x64/" data-permalink="">centos58x64</a></td>
+            <td>CentOS 5.8 64bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-07-31 19:05:25">3 个月</td>
+          </tr>
+          <tr id="centos64x64a">
+            <td><a class="id" href="/images/system/centos64x64a/" data-permalink="">centos64x64a</a></td>
+            <td>CentOS 6.4 64bit</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td>20</td>
+            <td>linux</td>
+            <td>公用</td>
+            <td class="time" title="2013-06-23 23:03:13">4 个月</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <p class="tips">* 如果 Windows 映像标明为“未激活”，请自行购买 Windows 授权，常规渠道有<a href="http://www.microsoftstore.com.cn/windows" target="_blank">微软商店</a>或者<a href="http://www.taobao.com" target="_blank">淘宝</a>。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper page">
+    <div class="page-intro">
+      <h1>硬盘 volumes</h1>
+      <p class="lead"><em>硬盘 (Volume) </em>为主机提供块存储设备，它独立于主机的生命周期而存在，可以被连接到任意运行中的主机上。注意，硬盘附加到主机上后，您还需要登陆到您的主机的操作系统中去加载该硬盘。当然，也可以从主机上卸载硬盘、并转至其他主机。注意，请先在您的主机的操作系统中卸载硬盘，然后再在青云系统中卸载。</p>
+    </div>
+    <div class="pane">
+      <div class="toolbar">
+        <a class="btn" href="#"><span class="icon icon-refresh"></span></a><a class="btn" href="#"><span class="icon icon-create"></span><span class="text">新建</span></a>
+        <div class="dropdown btn-disabled">
+          <input class="dropdown-toggle" type="text">
+          <div class="dropdown-text">更多操作...</div>
+          <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-instances"></span><span class="text">加载到主机</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">卸载硬盘</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-resize"></span><span class="text">扩容</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+        </div>
+        <div class="form-search"><input type="search" placeholder=" "></div>
+        <div class="pagination"></div>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th>ID</th>
+            <th>名称</th>
+            <th>
+              状态
+              <div class="dropdown">
+                <input class="dropdown-toggle" type="text">
+                <div class="dropdown-text"></div>
+                <div class="dropdown-content"><a href="#" data-filter="status" data-status="available,in-use,suspended">全部</a><a href="#" data-filter="status" data-status="available">可用</a><a href="#" data-filter="status" data-status="in-use">使用中</a><a href="#" data-filter="status" data-status="suspended">已暂停</a><a href="#" data-filter="status" data-status="deleted,ceased">已删除</a></div>
+              </div>
+            </th>
+            <th>应用主机</th>
+            <th>容量 (GB)</th>
+            <th>运行时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="vol-7sl0us9s">
+            <td class="checkbox"><input type="checkbox"></td>
+            <td><a class="id" href="/volumes/vol-7sl0us9s/" data-permalink="">vol-7sl0us9s</a></td>
+            <td>t</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td></td>
+            <td>10</td>
+            <td class="time">几秒钟</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p class="none" style="display: none;">结果为空</p>
+      <p class="tips">* 提示：可通过在各个资源上点击 "右键" 来进行常用操作。</p>
+      <div style="display: none;">
+        <p class="loading">正在加载...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}
