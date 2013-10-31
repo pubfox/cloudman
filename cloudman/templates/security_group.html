@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div id="security_groups" class="wrapper permalink">
+    <div class="topbar">
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/security_groups/" data-permalink="">security_groups</a><a class="level" href="/console/security_groups/sg-tdnumlnk/" data-permalink="">sg-tdnumlnk</a></div>
+    </div>
+    <div class="grid_8 description">
+      <div class="detail-item">
+        <div class="title">
+          <h3>基本属性&nbsp;</h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn" href="#"><span class="icon icon-security_groups"></span><span class="text">加载规则到主机</span></a><a class="btn btn-danger" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal">
+          <dt>ID</dt>
+          <dd><a class="id" href="/console/security_groups/sg-tdnumlnk/" data-permalink="">sg-tdnumlnk</a></dd>
+          <dt>名称</dt>
+          <dd class="name">tt</dd>
+          <dt>描述</dt>
+          <dd></dd>
+          <dt>应用资源</dt>
+          <dd></dd>
+          <dt>创建时间</dt>
+          <dd class="time">2013-10-31 11:12:14</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="activity detail-item">
+          <div class="hd">
+            <h3>操作日志<small> (3)</small></h3>
+          </div>
+          <div class="bd">
+            <ol>
+              <li class="activity-item successful on" id="j-eahl50ym">
+                <span href="#" class="icon icon-action icon-ApplySecurityGroup"><span class="arrow"></span></span><a class="message" href="#" data-job-action="ApplySecurityGroup">加载防火墙规则</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:15:46</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒</span>
+                <dl class="dl-horizontal">
+                  <dt>防火墙 :</dt>
+                  <dd><a class="id" href="/console/security_groups/sg-tdnumlnk/">sg-tdnumlnk</a></dd>
+                </dl>
+              </li>
+              <li class="activity-item successful" id="j-lxe3p0wo">
+                <span href="#" class="icon icon-action icon-ApplySecurityGroup"><span class="arrow"></span></span><a class="message" href="#" data-job-action="ApplySecurityGroup">加载防火墙规则</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:15:21</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒</span>
+                <dl class="dl-horizontal">
+                  <dt>防火墙 :</dt>
+                  <dd><a class="id" href="/console/security_groups/sg-tdnumlnk/">sg-tdnumlnk</a></dd>
+                </dl>
+              </li>
+              <li class="activity-item successful on" id="j-g2f2z107">
+                <span href="#" class="icon icon-action icon-ApplySecurityGroup"><span class="arrow"></span></span><a class="message" href="#" data-job-action="ApplySecurityGroup">加载防火墙规则</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:15:15</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒</span>
+                <dl class="dl-horizontal">
+                  <dt>防火墙 :</dt>
+                  <dd><a class="id" href="/console/security_groups/sg-tdnumlnk/">sg-tdnumlnk</a></dd>
+                </dl>
+              </li>
+            </ol>
+          </div>
+          <div class="ft" style="display: none;"><a class="btn btn-more">加载更多...</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_16 rules">
+      <div class="wrapper">
+        <div class="title">
+          <h3>规则</h3>
+        </div>
+        <div class="toolbar">
+          <a class="btn" href="#"><span class="icon icon-refresh"></span></a><a class="btn" href="#"><span class="icon icon-create"></span><span class="text">新建</span></a><a class="btn" href="#"><span class="icon icon-securitygroups"></span><span class="text">更新规则</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a>
+          <div class="pagination"></div>
+        </div>
+        <table class="table table-bordered table-hover inbound">
+          <caption>下行规则</caption>
+          <thead>
+            <tr>
+              <th class="checkbox" width="4%"><input type="checkbox"></th>
+              <th width="10%">名称</th>
+              <th width="10%">优先级</th>
+              <th width="10%">协议</th>
+              <th width="10%">行为</th>
+              <th width="16%">起始端口 (<span class="tooltip" href="#" title="协议为ICMP时表示类型">?</span>)</th>
+              <th width="16%">结束端口(<span class="tooltip" href="#" title="协议为ICMP时表示代码">?</span>)</th>
+              <th width="24%">源IP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="sgr-pi18va7j">
+              <td class="checkbox"><input type="checkbox"></td>
+              <td></td>
+              <td>0</td>
+              <td>TCP</td>
+              <td>接受</td>
+              <td>22</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr id="sgr-jryni0fx">
+              <td class="checkbox"><input type="checkbox"></td>
+              <td></td>
+              <td>1</td>
+              <td>TCP</td>
+              <td>接受</td>
+              <td>80</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered table-hover outbound">
+          <caption>上行规则</caption>
+          <thead>
+            <tr>
+              <th class="checkbox" width="4%"><input type="checkbox"></th>
+              <th width="10%">名称</th>
+              <th width="10%">优先级</th>
+              <th width="10%">协议</th>
+              <th width="10%">行为</th>
+              <th width="16%">起始端口 (<span class="tooltip" href="#" title="协议为ICMP时表示类型">?</span>)</th>
+              <th width="16%">结束端口(<span class="tooltip" href="#" title="协议为ICMP时表示代码">?</span>)</th>
+              <th width="24%">目的IP</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

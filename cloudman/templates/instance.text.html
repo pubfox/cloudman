@@ -1,0 +1,619 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div id="instances" class="wrapper permalink">
+    <div class="topbar">
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/instances/" data-permalink="">instances</a><a class="level" href="/console/instances/i-cfk0kie6/" data-permalink="">i-cfk0kie6</a></div>
+      <div class="view-types"><span class="title">查看方式：</span><a class="view-type type-text current" href="#" data-type="text"><span class="icon icon-text"></span>文字</a><a class="view-type type-graph" href="#" data-type="graph"><span class="icon icon-graph"></span>图形</a></div>
+    </div>
+    <div class="grid_8 description">
+      <div class="detail-item">
+        <div class="title">
+          <h3>基本属性&nbsp;<a class="icon icon-refresh" href=""></a></h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-start"></span><span class="text">启动</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-stop"></span><span class="text">关机</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-restart"></span><span class="text">重启</span></a><a class="btn" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn" href="#"><span class="icon icon-capture"></span><span class="text">制作成新映像</span></a><a class="btn" href="#"><span class="icon icon-reset"></span><span class="text">重置</span></a><a class="btn btn-danger" href="#"><span class="icon icon-terminate"></span><span class="text">销毁</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal">
+          <dt>ID</dt>
+          <dd><span class="id">i-cfk0kie6</span></dd>
+          <dt>名称</dt>
+          <dd>tt</dd>
+          <dt>描述</dt>
+          <dd></dd>
+          <dt>状态</dt>
+          <dd class="stopped"><span class="icon-status icon-stopped"></span>&nbsp; 已关机</dd>
+          <dt>创建时间</dt>
+          <dd class="time">2013-10-31 11:21:21</dd>
+          <dt>运行时间</dt>
+          <dd class="time">8 分钟</dd>
+        </dl>
+      </div>
+      <div class="detail-item">
+        <div class="title">
+          <h3>配置信息&nbsp;<a class="icon icon-refresh" href=""></a></h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-resize"></span><span class="text">更改配置</span></a><a class="btn" href="#"><span class="icon icon-copy"></span><span class="text">复制</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-keypairs"></span><span class="text">加载SSH密钥</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal">
+          <dt>类型</dt>
+          <dd>小型A</dd>
+          <dt>映像ID</dt>
+          <dd><a class="id" href="/console/images/system/precisex64a/" data-permalink="">precisex64a</a></dd>
+          <dt>CPU个数</dt>
+          <dd>1</dd>
+          <dt>内存</dt>
+          <dd>512MB</dd>
+          <dt>SSH密钥&nbsp;<a href="https://docs.qingcloud.com/faq/index.html#ssh" target="_blank" title="如何使用SSH密钥来访问主机？">(?)</a></dt>
+          <dd>
+            <div class="ids" data-id="kp-j0ktu9t1"><a class="id" href="/console/keypairs/kp-j0ktu9t1/" data-permalink="">kp-j0ktu9t1</a><a class="btn-detach-keypair icon-close" href="#"></a></div>
+            <br>
+          </dd>
+        </dl>
+      </div>
+      <div class="detail-item">
+        <div class="title">
+          <h3>关联资源&nbsp;<a class="icon icon-refresh" href=""></a></h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn btn-forbidden" href="#"><span class="icon icon-security_groups"></span><span class="text">加载防火墙规则</span></a><a class="btn" href="#"><span class="icon icon-volumes"></span><span class="text">加载硬盘</span></a><a class="btn" href="#"><span class="icon icon-vxnet"></span><span class="text">加入网络</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-eip"></span><span class="text">绑定公网IP</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal">
+          <dt>防火墙</dt>
+          <dd></dd>
+          <dt>硬盘</dt>
+          <dd>
+            <div class="ids" data-id="vol-a0brpskf"><a class="id" href="/console/volumes/vol-a0brpskf/" data-permalink="">vol-a0brpskf</a><a class="btn-detach-volume icon-close" href="#"></a></div>
+            <br>
+          </dd>
+          <dt>网络</dt>
+          <dd>
+            <div class="ids"><a class="id" href="/console/networks/vxnets/vxnet-dpt9wmi/" data-permalink="">(tt) / 52:54:fb:94:6e:02 / 192.168.1.2</a><a class="btn-leave icon-close" href="#" data-id="vxnet-dpt9wmi"></a></div>
+            <br>
+          </dd>
+          <dt>公网IP</dt>
+          <dd></dd>
+        </dl>
+      </div>
+      <div class="detail-item lease-info">
+        <div class="title">
+          <h3>租用信息&nbsp;<a class="icon icon-refresh" href=""></a></h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-view"></span><span class="text">查看消费详情</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal contract">
+          <dt>生效时间</dt>
+          <dd class="time">2013-10-31 11:21:21</dd>
+          <dt>终止时间</dt>
+          <dd class="time"></dd>
+          <dt>单价</dt>
+          <dd>0.04 元/小时</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="activity detail-item">
+          <div class="hd">
+            <h3>操作日志<small> (4)</small></h3>
+          </div>
+          <div class="bd">
+            <ol>
+              <li class="activity-item successful on" id="j-bxtvb8kl">
+                <span href="#" class="icon icon-action icon-CaptureInstance"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CaptureInstance">制作新映像</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:26:16</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 10秒</span>
+                <dl class="dl-horizontal">
+                  <dt>主机 :</dt>
+                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dt>映像 :</dt>
+                  <dd><a class="id" href="/console/images/img-8ghrj3cr/">img-8ghrj3cr</a></dd>
+                </dl>
+              </li>
+              <li class="activity-item successful on" id="j-qlpn0k66">
+                <span href="#" class="icon icon-action icon-StopInstances"><span class="arrow"></span></span><a class="message" href="#" data-job-action="StopInstances">关机</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:25:55</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 8秒</span>
+                <dl class="dl-horizontal">
+                  <dt>主机 :</dt>
+                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                </dl>
+              </li>
+              <li class="activity-item successful on" id="j-zqnjkx01">
+                <span href="#" class="icon icon-action icon-AttachVolumes"><span class="arrow"></span></span><a class="message" href="#" data-job-action="AttachVolumes">加载硬盘设备</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:22:24</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 2秒</span>
+                <dl class="dl-horizontal">
+                  <dt>主机 :</dt>
+                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dt>硬盘 :</dt>
+                  <dd><a class="id" href="/console/volumes/vol-a0brpskf/">vol-a0brpskf</a></dd>
+                </dl>
+              </li>
+              <li class="activity-item successful on" id="j-7quvhe35">
+                <span href="#" class="icon icon-action icon-RunInstances"><span class="arrow"></span></span><a class="message" href="#" data-job-action="RunInstances">创建新主机</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:21:13</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 8秒</span>
+                <dl class="dl-horizontal">
+                  <dt>主机 :</dt>
+                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dt>主机类型:</dt>
+                  <dd>小型A</dd>
+                  <dt>映像ID:</dt>
+                  <dd><a class="id" href="/console/images/precisex64a/">precisex64a</a></dd>
+                </dl>
+              </li>
+            </ol>
+          </div>
+          <div class="ft" style="display: none;"><a class="btn btn-more">加载更多...</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_16 monitor">
+      <div class="title">
+        <h3>监控信息</h3>
+        <div class="btn-group nested"><button class="btn btn-small selected" href="#" data-step="5m" data-range="6" data-text="5分钟">最近6小时</button><button class="btn btn-small" href="#" data-step="15m" data-range="24" data-text="15分钟">最近一天</button><button class="btn btn-small" href="#" data-step="2h" data-range="336" data-text="2小时">最近两星期</button><button class="btn btn-small" href="#" data-step="1d" data-range="772" data-text="1d">最近1个月</button><button class="btn btn-small" href="#" data-step="1d" data-range="4632" data-text="1d">最近半年</button></div>
+      </div>
+      <div class="charts">
+        <div class="chart">
+          <h3>CPU</h3>
+          <div class="svg">
+            <svg width="100%" height="200">
+              <g transform="translate(50,20)">
+                <g class="x axis" transform="translate(0,150)">
+                  <g transform="translate(50.574169927528004,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">06 AM</text>
+                  </g>
+                  <g transform="translate(152.2946308639844,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">07 AM</text>
+                  </g>
+                  <g transform="translate(254.01509180044076,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">08 AM</text>
+                  </g>
+                  <g transform="translate(355.73555273689715,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">09 AM</text>
+                  </g>
+                  <g transform="translate(457.45601367335354,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">10 AM</text>
+                  </g>
+                  <g transform="translate(559.1764746098099,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">11 AM</text>
+                  </g>
+                  <path class="domain" d="M0,-150V0H601.5600000000001V-150"></path>
+                </g>
+                <g class="y axis">
+                  <g transform="translate(0,150)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.0</text>
+                  </g>
+                  <g transform="translate(0,133.33333333333334)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.2</text>
+                  </g>
+                  <g transform="translate(0,116.66666666666666)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.4</text>
+                  </g>
+                  <g transform="translate(0,100)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.6</text>
+                  </g>
+                  <g transform="translate(0,83.33333333333333)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.8</text>
+                  </g>
+                  <g transform="translate(0,66.66666666666666)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1.0</text>
+                  </g>
+                  <g transform="translate(0,50)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1.2</text>
+                  </g>
+                  <g transform="translate(0,33.33333333333333)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1.4</text>
+                  </g>
+                  <g transform="translate(0,16.666666666666657)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1.6</text>
+                  </g>
+                  <g transform="translate(0,0)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1.8</text>
+                  </g>
+                  <path class="domain" d="M601.5600000000001,0H0V150H601.5600000000001"></path>
+                </g>
+                <path class="line cpu" d="M601.5600000000001,0"></path>
+                <line class="line dash" style="display: none;"></line>
+                <defs>
+                  <filter id="drop-shadow" height="120%">
+                    <feGaussianBlur in="SourceAlpha" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+                    <feMerge>
+                      <feMergeNode in="offsetBlur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g class="chart-tooltip" style="display: none;">
+                  <rect dy="1em" width="210" style="stroke: #eeeeee; fill: #ffffff; filter: url(#drop-shadow);" height="40"></rect>
+                  <text class="datetime" x="5" y="15" style="font-weight: bold;"></text>
+                  <text class="unit" x="145" y="15" display="none">单位: 百分比 (%)</text>
+                  <circle class="cpu" r="3" transform="translate(10, 32)"></circle>
+                  <text x="20" y="36">CPU:</text>
+                  <text x="50" y="36" style="font-weight: bold;">0 %</text>
+                </g>
+                <rect class="overlay" width="601.5600000000001" height="150"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="chart">
+          <h3>内存</h3>
+          <div class="svg">
+            <svg width="100%" height="200">
+              <g transform="translate(50,20)">
+                <g class="x axis" transform="translate(0,150)">
+                  <g transform="translate(50.574169927528004,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">06 AM</text>
+                  </g>
+                  <g transform="translate(152.2946308639844,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">07 AM</text>
+                  </g>
+                  <g transform="translate(254.01509180044076,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">08 AM</text>
+                  </g>
+                  <g transform="translate(355.73555273689715,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">09 AM</text>
+                  </g>
+                  <g transform="translate(457.45601367335354,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">10 AM</text>
+                  </g>
+                  <g transform="translate(559.1764746098099,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">11 AM</text>
+                  </g>
+                  <path class="domain" d="M0,-150V0H601.5600000000001V-150"></path>
+                </g>
+                <g class="y axis">
+                  <g transform="translate(0,150)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0</text>
+                  </g>
+                  <g transform="translate(0,131.25)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1</text>
+                  </g>
+                  <g transform="translate(0,112.5)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">2</text>
+                  </g>
+                  <g transform="translate(0,93.75)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">3</text>
+                  </g>
+                  <g transform="translate(0,75)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">4</text>
+                  </g>
+                  <g transform="translate(0,56.25)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">5</text>
+                  </g>
+                  <g transform="translate(0,37.5)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">6</text>
+                  </g>
+                  <g transform="translate(0,18.75)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">7</text>
+                  </g>
+                  <g transform="translate(0,0)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">8</text>
+                  </g>
+                  <path class="domain" d="M601.5600000000001,0H0V150H601.5600000000001"></path>
+                </g>
+                <path class="line memory" d="M601.5600000000001,0"></path>
+                <line class="line dash" style="display: none;"></line>
+                <defs>
+                  <filter id="drop-shadow" height="120%">
+                    <feGaussianBlur in="SourceAlpha" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+                    <feMerge>
+                      <feMergeNode in="offsetBlur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g class="chart-tooltip" style="display: none;">
+                  <rect dy="1em" width="210" style="stroke: #eeeeee; fill: #ffffff; filter: url(#drop-shadow);" height="40"></rect>
+                  <text class="datetime" x="5" y="15" style="font-weight: bold;"></text>
+                  <text class="unit" x="145" y="15" display="none">单位: 百分比 (%)</text>
+                  <circle class="memory" r="3" transform="translate(10, 32)"></circle>
+                  <text x="20" y="36">内存:</text>
+                  <text x="50" y="36" style="font-weight: bold;">0 %</text>
+                </g>
+                <rect class="overlay" width="601.5600000000001" height="150"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="chart">
+          <h3>disk-os</h3>
+          <div class="svg">
+            <svg width="100%" height="200">
+              <g transform="translate(50,20)">
+                <g class="x axis" transform="translate(0,150)">
+                  <g transform="translate(50.574169927528004,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">06 AM</text>
+                  </g>
+                  <g transform="translate(152.2946308639844,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">07 AM</text>
+                  </g>
+                  <g transform="translate(254.01509180044076,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">08 AM</text>
+                  </g>
+                  <g transform="translate(355.73555273689715,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">09 AM</text>
+                  </g>
+                  <g transform="translate(457.45601367335354,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">10 AM</text>
+                  </g>
+                  <g transform="translate(559.1764746098099,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">11 AM</text>
+                  </g>
+                  <path class="domain" d="M0,-150V0H601.5600000000001V-150"></path>
+                </g>
+                <g class="y axis">
+                  <g transform="translate(0,150)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0</text>
+                  </g>
+                  <g transform="translate(0,127.13377190044258)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">100</text>
+                  </g>
+                  <g transform="translate(0,104.26754380088518)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">200</text>
+                  </g>
+                  <g transform="translate(0,81.40131570132776)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">300</text>
+                  </g>
+                  <g transform="translate(0,58.53508760177036)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">400</text>
+                  </g>
+                  <g transform="translate(0,35.66885950221294)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">500</text>
+                  </g>
+                  <g transform="translate(0,12.802631402655521)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">600</text>
+                  </g>
+                  <path class="domain" d="M601.5600000000001,0H0V150H601.5600000000001"></path>
+                </g>
+                <path class="line read" d="M601.5600000000001,0"></path>
+                <path class="line write" d="M601.5600000000001,140.90196551308333"></path>
+                <line class="line dash" style="display: none;"></line>
+                <defs>
+                  <filter id="drop-shadow" height="120%">
+                    <feGaussianBlur in="SourceAlpha" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+                    <feMerge>
+                      <feMergeNode in="offsetBlur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g class="chart-tooltip" style="display: none;">
+                  <rect dy="1em" width="210" style="stroke: #eeeeee; fill: #ffffff; filter: url(#drop-shadow);" height="60"></rect>
+                  <text class="datetime" x="5" y="15" style="font-weight: bold;"></text>
+                  <text class="unit" x="145" y="15">单位: KB/s</text>
+                  <circle class="read" r="3" transform="translate(10, 32)"></circle>
+                  <text x="20" y="36">读:</text>
+                  <text x="38" y="36" style="font-weight: bold;">0</text>
+                  <circle class="write" r="3" transform="translate(10, 50)"></circle>
+                  <text x="20" y="54">写:</text>
+                  <text x="38" y="54" style="font-weight: bold;">0</text>
+                </g>
+                <rect class="overlay" width="601.5600000000001" height="150"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="chart">
+          <h3>disk-vol-a0brpskf</h3>
+          <div class="svg">
+            <svg width="100%" height="200">
+              <g transform="translate(50,20)">
+                <g class="x axis" transform="translate(0,150)">
+                  <g transform="translate(50.574169927528004,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">06 AM</text>
+                  </g>
+                  <g transform="translate(152.2946308639844,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">07 AM</text>
+                  </g>
+                  <g transform="translate(254.01509180044076,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">08 AM</text>
+                  </g>
+                  <g transform="translate(355.73555273689715,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">09 AM</text>
+                  </g>
+                  <g transform="translate(457.45601367335354,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">10 AM</text>
+                  </g>
+                  <g transform="translate(559.1764746098099,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">11 AM</text>
+                  </g>
+                  <path class="domain" d="M0,-150V0H601.5600000000001V-150"></path>
+                </g>
+                <g class="y axis">
+                  <g transform="translate(0,150)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.0</text>
+                  </g>
+                  <g transform="translate(0,120)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.2</text>
+                  </g>
+                  <g transform="translate(0,90)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.4</text>
+                  </g>
+                  <g transform="translate(0,60)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.6</text>
+                  </g>
+                  <g transform="translate(0,30)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.8</text>
+                  </g>
+                  <g transform="translate(0,0)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1.0</text>
+                  </g>
+                  <path class="domain" d="M601.5600000000001,0H0V150H601.5600000000001"></path>
+                </g>
+                <path class="line read" d="M601.5600000000001,150"></path>
+                <path class="line write" d="M601.5600000000001,150"></path>
+                <line class="line dash" style="display: none;"></line>
+                <defs>
+                  <filter id="drop-shadow" height="120%">
+                    <feGaussianBlur in="SourceAlpha" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+                    <feMerge>
+                      <feMergeNode in="offsetBlur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g class="chart-tooltip" style="display: none;">
+                  <rect dy="1em" width="210" style="stroke: #eeeeee; fill: #ffffff; filter: url(#drop-shadow);" height="60"></rect>
+                  <text class="datetime" x="5" y="15" style="font-weight: bold;"></text>
+                  <text class="unit" x="145" y="15">单位: B/s</text>
+                  <circle class="read" r="3" transform="translate(10, 32)"></circle>
+                  <text x="20" y="36">读:</text>
+                  <text x="38" y="36" style="font-weight: bold;">0</text>
+                  <circle class="write" r="3" transform="translate(10, 50)"></circle>
+                  <text x="20" y="54">写:</text>
+                  <text x="38" y="54" style="font-weight: bold;">0</text>
+                </g>
+                <rect class="overlay" width="601.5600000000001" height="150"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="chart">
+          <h3>vxnet-dpt9wmi<span class="meter">&nbsp; / &nbsp;if-52:54:fb:94:6e:02</span></h3>
+          <div class="svg">
+            <svg width="100%" height="200">
+              <g transform="translate(50,20)">
+                <g class="x axis" transform="translate(0,150)">
+                  <g transform="translate(50.574169927528004,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">06 AM</text>
+                  </g>
+                  <g transform="translate(152.2946308639844,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">07 AM</text>
+                  </g>
+                  <g transform="translate(254.01509180044076,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">08 AM</text>
+                  </g>
+                  <g transform="translate(355.73555273689715,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">09 AM</text>
+                  </g>
+                  <g transform="translate(457.45601367335354,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">10 AM</text>
+                  </g>
+                  <g transform="translate(559.1764746098099,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">11 AM</text>
+                  </g>
+                  <path class="domain" d="M0,-150V0H601.5600000000001V-150"></path>
+                </g>
+                <g class="y axis">
+                  <g transform="translate(0,150)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0</text>
+                  </g>
+                  <g transform="translate(0,115.27777777777777)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">50</text>
+                  </g>
+                  <g transform="translate(0,80.55555555555556)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">100</text>
+                  </g>
+                  <g transform="translate(0,45.83333333333334)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">150</text>
+                  </g>
+                  <g transform="translate(0,11.111111111111114)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">200</text>
+                  </g>
+                  <path class="domain" d="M601.5600000000001,0H0V150H601.5600000000001"></path>
+                </g>
+                <path class="line inbound" d="M601.5600000000001,5.555555555555571"></path>
+                <path class="line outbound" d="M601.5600000000001,0"></path>
+                <line class="line dash"></line>
+                <defs>
+                  <filter id="drop-shadow" height="120%">
+                    <feGaussianBlur in="SourceAlpha" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+                    <feMerge>
+                      <feMergeNode in="offsetBlur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g class="chart-tooltip" style="display: none;">
+                  <rect dy="1em" width="210" style="stroke: #eeeeee; fill: #ffffff; filter: url(#drop-shadow);"></rect>
+                  <text class="datetime" x="5" y="15" style="font-weight: bold;"></text>
+                  <text class="unit" x="145" y="15">单位: bps</text>
+                </g>
+                <rect class="overlay" width="601.5600000000001" height="150"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

@@ -1,0 +1,22 @@
+<html>
+<body>
+
+    <h1>please signin:{% if notification %} {{ notification }} {% end %}</h1>
+    <br/>
+
+
+     <form id="form" action="/signin/" method="post">
+        {% module xsrf_form_html() %}
+        <label class="grey" for="log">User</label><br />
+        <input type="text" name="user" style="width:99%" id="user"><br>
+        <label class="grey" for="pwd">Password</label><br />
+        <input type="password" name="password" style="width:99%" id="password"><br />
+        <input type="submit" id="signin" name="signin" value="signin" class="button"><br />
+    </form>
+
+    <br/>
+    <a href='/signup/'>Sign Up</a>
+
+
+</body>
+</html>

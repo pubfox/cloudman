@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div class="wrapper permalink">
+    <div class="topbar">
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/images/" data-permalink="">images</a><a class="level" href="/console/images/self/" data-permalink="">self</a><a class="level" href="/console/images/self/img-8ghrj3cr/" data-permalink="">img-8ghrj3cr</a></div>
+    </div>
+    <div class="description">
+      <div class="detail-item">
+        <div class="title">
+          <h3>基本属性&nbsp;</h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-danger" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal">
+          <dt>ID</dt>
+          <dd><span class="id">img-8ghrj3cr</span></dd>
+          <dt>名称</dt>
+          <dd>tt</dd>
+          <dt>描述</dt>
+          <dd>用户账号 ubuntu，密码 p12cHANgepwD，拥有 sudo 能力。新建主机后请务必修改密码！</dd>
+          <dt>状态</dt>
+          <dd class="available" width="35%"><span class="icon-status icon-available"></span>&nbsp; 可用</dd>
+          <dt>文件大小</dt>
+          <dd>20 G</dd>
+          <dt>可见范围</dt>
+          <dd>私有</dd>
+          <dt>平台</dt>
+          <dd>linux</dd>
+          <dt>应用主机</dt>
+          <dd></dd>
+          <dt>创建时间</dt>
+          <dd class="time">2013-10-31 11:26:26</dd>
+          <dt>运行时间</dt>
+          <dd class="time">27 分钟</dd>
+        </dl>
+      </div>
+      <div class="detail-item lease-info">
+        <div class="title">
+          <h3>租用信息&nbsp;<a class="icon icon-refresh" href=""></a></h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-view"></span><span class="text">查看消费详情</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal contract">
+          <dt>生效时间</dt>
+          <dd class="time">2013-10-31 11:26:26</dd>
+          <dt>终止时间</dt>
+          <dd class="time"></dd>
+          <dt>单价</dt>
+          <dd>0.04 元/小时</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="activity detail-item">
+          <div class="hd">
+            <h3>操作日志<small> (1)</small></h3>
+          </div>
+          <div class="bd">
+            <ol>
+              <li class="activity-item successful" id="j-bxtvb8kl">
+                <span href="#" class="icon icon-action icon-CaptureInstance"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CaptureInstance">制作新映像</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:26:16</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 10秒</span>
+                <dl class="dl-horizontal">
+                  <dt>主机 :</dt>
+                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dt>映像 :</dt>
+                  <dd><a class="id" href="/console/images/img-8ghrj3cr/">img-8ghrj3cr</a></dd>
+                </dl>
+              </li>
+            </ol>
+          </div>
+          <div class="ft" style="display: none;"><a class="btn btn-more">加载更多...</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

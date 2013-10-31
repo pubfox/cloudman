@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div id="eips" class="wrapper permalink">
+    <div class="topbar">
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/eips/" data-permalink="">eips</a><a class="level" href="/console/eips/eip-02yrjr8t/" data-permalink="">eip-02yrjr8t</a></div>
+    </div>
+    <div class="grid_8 description">
+      <div class="detail-item">
+        <div class="title">
+          <h3>基本属性&nbsp;</h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-instance"></span><span class="text">分配到主机</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-router"></span><span class="text">分配到路由器</span></a><a class="btn" href="#"><span class="icon icon-dissociate"></span><span class="text">解绑</span></a><a class="btn" href="#"><span class="icon icon-modify"></span><span class="text">设置ICP备案信息</span></a><a class="btn" href="#"><span class="icon icon-bandwidth"></span><span class="text">改变带宽</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-release"></span><span class="text">删除</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal">
+          <dt>ID</dt>
+          <dd><span class="id">eip-02yrjr8t</span></dd>
+          <dt>名称</dt>
+          <dd>tt</dd>
+          <dt>描述</dt>
+          <dd></dd>
+          <dt>状态</dt>
+          <dd class="associated" width="35%"><span class="icon-status icon-associated"></span>&nbsp; 已分配</dd>
+          <dt>地址</dt>
+          <dd>117.121.25.196</dd>
+          <dt>ICP备案</dt>
+          <dd>
+            <div class="icp-codes"></div>
+          </dd>
+          <dt>带宽</dt>
+          <dd>1 Mbps</dd>
+          <dt>应用资源</dt>
+          <dd><a class="rname" href="/console/networks/routers/rtr-70yxd8g9/" data-permalink="">(tt)</a></dd>
+          <dt>IP分组</dt>
+          <dd>BGP多线</dd>
+          <dt>创建时间</dt>
+          <dd class="time">2013-10-31 11:16:21</dd>
+          <dt>使用时间</dt>
+          <dd class="time">2 小时</dd>
+        </dl>
+      </div>
+      <div class="detail-item lease-info">
+        <div class="title">
+          <h3>租用信息&nbsp;<a class="icon icon-refresh" href=""></a></h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-view"></span><span class="text">查看消费详情</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal contract">
+          <dt>生效时间</dt>
+          <dd class="time">2013-10-31 11:16:21</dd>
+          <dt>终止时间</dt>
+          <dd class="time"></dd>
+          <dt>单价</dt>
+          <dd>0.03 元/小时</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="activity detail-item">
+          <div class="hd">
+            <h3>操作日志<small> (0)</small></h3>
+          </div>
+          <div class="bd">
+            <ol>
+              <li class="none">操作日志为空</li>
+            </ol>
+          </div>
+          <div class="ft" style="display: none;"><a class="btn btn-more">加载更多...</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_16 monitor">
+      <div class="title">
+        <h3>监控信息</h3>
+        <div class="btn-group nested"><button class="btn btn-small selected" href="#" data-step="5m" data-range="6" data-text="5分钟">最近6小时</button><button class="btn btn-small" href="#" data-step="15m" data-range="24" data-text="15分钟">最近一天</button><button class="btn btn-small" href="#" data-step="2h" data-range="336" data-text="2小时">最近两星期</button><button class="btn btn-small" href="#" data-step="1d" data-range="772" data-text="1d">最近1个月</button><button class="btn btn-small" href="#" data-step="1d" data-range="4632" data-text="1d">最近半年</button></div>
+      </div>
+      <div class="charts">
+        <div class="chart">
+          <h3>vxnet-0</h3>
+          <div class="toggle toggle-off"><label class="toggle-radio" for="toggleOption2">开</label><input type="radio" name="toggleOptions" id="toggleOption1" value="option1" checked="checked"><label class="toggle-radio" for="toggleOption1">关</label><input type="radio" name="toggleOptions" id="toggleOption2" value="option2"></div>
+          <span class="tips" title="最近1小时,每隔10秒自动刷新">实时数据</span>
+          <div class="labels">单位：<span class="unit">bps</span><span class="step">间隔：5分钟</span><span class="inbound"></span>进<span class="outbound"></span>出</div>
+          <div class="svg">
+            <svg width="100%" height="200">
+              <g transform="translate(50,20)">
+                <g class="x axis" transform="translate(0,150)">
+                  <g transform="translate(80.00946870582426,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">08 AM</text>
+                  </g>
+                  <g transform="translate(180.95473282727764,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">09 AM</text>
+                  </g>
+                  <g transform="translate(281.899996948731,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">10 AM</text>
+                  </g>
+                  <g transform="translate(382.8452610701844,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">11 AM</text>
+                  </g>
+                  <g transform="translate(483.7905251916378,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">12 PM</text>
+                  </g>
+                  <g transform="translate(584.7357893130911,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">01 PM</text>
+                  </g>
+                  <path class="domain" d="M0,-150V0H601.5600000000001V-150"></path>
+                </g>
+                <g class="y axis">
+                  <g transform="translate(0,150)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0</text>
+                  </g>
+                  <g transform="translate(0,118.75)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">50</text>
+                  </g>
+                  <g transform="translate(0,87.5)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">100</text>
+                  </g>
+                  <g transform="translate(0,56.25)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">150</text>
+                  </g>
+                  <g transform="translate(0,25)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">200</text>
+                  </g>
+                  <path class="domain" d="M601.5600000000001,0H0V150H601.5600000000001"></path>
+                </g>
+                <path class="line inbound" d="M424.90578778745663,0L433.3178931309111,50L441.7299984743655,40.000000000000014L450.14210381782,35.000000000000014L458.55420916127446,50L466.96631450472887,40.000000000000014L475.37841984818334,35.000000000000014L483.7905251916378,55L492.20263053509217,35.000000000000014L500.61473587854664,55L509.0268412220011,55L517.4389465654556,50L525.85105190891,40.000000000000014L534.2631572523645,45L542.6752625958189,45L551.0873679392733,40.000000000000014L559.4994732827278,35.000000000000014L567.9115786261823,50L576.3236839696367,55L584.7357893130911,35.000000000000014L593.1478946565455,45L601.5600000000001,50"></path>
+                <path class="line outbound" d="M424.90578778745663,10L433.3178931309111,50L441.7299984743655,40.000000000000014L450.14210381782,40.000000000000014L458.55420916127446,50L466.96631450472887,40.000000000000014L475.37841984818334,40.000000000000014L483.7905251916378,55L492.20263053509217,40.000000000000014L500.61473587854664,55L509.0268412220011,55L517.4389465654556,55L525.85105190891,40.000000000000014L534.2631572523645,45L542.6752625958189,50L551.0873679392733,40.000000000000014L559.4994732827278,40.000000000000014L567.9115786261823,55L576.3236839696367,55L584.7357893130911,40.000000000000014L593.1478946565455,45L601.5600000000001,55"></path>
+                <line class="line dash"></line>
+                <defs>
+                  <filter id="drop-shadow" height="120%">
+                    <feGaussianBlur in="SourceAlpha" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+                    <feMerge>
+                      <feMergeNode in="offsetBlur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g class="chart-tooltip" style="display: none;">
+                  <rect dy="1em" width="210" style="stroke: #eeeeee; fill: #ffffff; filter: url(#drop-shadow);"></rect>
+                  <text class="datetime" x="5" y="15" style="font-weight: bold;"></text>
+                  <text class="unit" x="145" y="15">单位: bps</text>
+                </g>
+                <rect class="overlay" width="601.5600000000001" height="150"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}

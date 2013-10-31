@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content" style="">
+  <div id="volumes" class="wrapper permalink">
+    <div class="topbar">
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/volumes/" data-permalink="">volumes</a><a class="level" href="/console/volumes/vol-a0brpskf/" data-permalink="">vol-a0brpskf</a></div>
+    </div>
+    <div class="grid_8 description">
+      <div class="detail-item">
+        <div class="title">
+          <h3>基本属性&nbsp;</h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-instances"></span><span class="text">加载到主机</span></a><a class="btn" href="#"><span class="icon icon-delete"></span><span class="text">卸载硬盘</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-resize"></span><span class="text">扩容</span></a><a class="btn btn-danger btn-forbidden" href="#"><span class="icon icon-delete"></span><span class="text">删除</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal">
+          <dt>ID</dt>
+          <dd><a class="id" href="/console/volumes/vol-a0brpskf/" data-permalink="">vol-a0brpskf</a></dd>
+          <dt>状态</dt>
+          <dd class="in-use"><span class="icon-status icon-in-use"></span>&nbsp; 使用中</dd>
+          <dt>名称</dt>
+          <dd>t</dd>
+          <dt>应用主机</dt>
+          <dd><a class="rname" href="/console/instances/i-cfk0kie6/" data-permalink="">tt</a></dd>
+          <dt>描述</dt>
+          <dd></dd>
+          <dt>容量</dt>
+          <dd>10 GB</dd>
+          <dt>创建时间</dt>
+          <dd class="time">2013-10-31 11:19:56</dd>
+          <dt>运行时间</dt>
+          <dd class="time">25 分钟</dd>
+        </dl>
+      </div>
+      <div class="detail-item lease-info">
+        <div class="title">
+          <h3>租用信息&nbsp;<a class="icon icon-refresh" href=""></a></h3>
+          <div class="dropdown">
+            <input class="dropdown-toggle" type="text">
+            <div class="dropdown-text"><span class="icon-menu"></span></div>
+            <div class="dropdown-content"><a class="btn" href="#"><span class="icon icon-view"></span><span class="text">查看消费详情</span></a></div>
+          </div>
+        </div>
+        <dl class="dl-horizontal contract">
+          <dt>生效时间</dt>
+          <dd class="time">2013-10-31 11:19:56</dd>
+          <dt>终止时间</dt>
+          <dd class="time"></dd>
+          <dt>单价</dt>
+          <dd>0.02 元/小时</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="activity detail-item">
+          <div class="hd">
+            <h3>操作日志<small> (2)</small></h3>
+          </div>
+          <div class="bd">
+            <ol>
+              <li class="activity-item successful on" id="j-zqnjkx01">
+                <span href="#" class="icon icon-action icon-AttachVolumes"><span class="arrow"></span></span><a class="message" href="#" data-job-action="AttachVolumes">加载硬盘设备</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:22:24</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 2秒</span>
+                <dl class="dl-horizontal">
+                  <dt>主机 :</dt>
+                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dt>硬盘 :</dt>
+                  <dd><a class="id" href="/console/volumes/vol-a0brpskf/">vol-a0brpskf</a></dd>
+                </dl>
+              </li>
+              <li class="activity-item successful" id="j-jfoi8klt">
+                <span href="#" class="icon icon-action icon-CreateVolumes"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CreateVolumes">创建硬盘</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:19:56</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 1秒之内</span>
+                <dl class="dl-horizontal">
+                  <dt>硬盘 :</dt>
+                  <dd><a class="id" href="/console/volumes/vol-a0brpskf/">vol-a0brpskf</a></dd>
+                  <dt>大小:</dt>
+                  <dd>10 GB</dd>
+                </dl>
+              </li>
+            </ol>
+          </div>
+          <div class="ft" style="display: none;"><a class="btn btn-more">加载更多...</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_16 monitor">
+      <div class="title">
+        <h3>监控信息</h3>
+        <div class="btn-group nested"><button class="btn btn-small selected" href="#" data-step="5m" data-range="6" data-text="5分钟">最近6小时</button><button class="btn btn-small" href="#" data-step="15m" data-range="24" data-text="15分钟">最近一天</button><button class="btn btn-small" href="#" data-step="2h" data-range="336" data-text="2小时">最近两星期</button><button class="btn btn-small" href="#" data-step="1d" data-range="772" data-text="1d">最近1个月</button><button class="btn btn-small" href="#" data-step="1d" data-range="4632" data-text="1d">最近半年</button></div>
+      </div>
+      <div class="charts">
+        <div class="chart">
+          <h3>disk-vol-a0brpskf</h3>
+          <div class="svg">
+            <svg width="100%" height="200">
+              <g transform="translate(50,20)">
+                <g class="x axis" transform="translate(0,150)">
+                  <g transform="translate(25.64190946468948,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">06 AM</text>
+                  </g>
+                  <g transform="translate(130.3542895620187,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">07 AM</text>
+                  </g>
+                  <g transform="translate(235.06666965934787,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">08 AM</text>
+                  </g>
+                  <g transform="translate(339.7790497566771,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">09 AM</text>
+                  </g>
+                  <g transform="translate(444.4914298540063,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">10 AM</text>
+                  </g>
+                  <g transform="translate(549.2038099513355,0)" style="opacity: 1;">
+                    <line class="tick" y2="-150" x2="0"></line>
+                    <text y="10" x="0" dy=".71em" style="text-anchor: middle;">11 AM</text>
+                  </g>
+                  <path class="domain" d="M0,-150V0H601.5600000000001V-150"></path>
+                </g>
+                <g class="y axis">
+                  <g transform="translate(0,150)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.0</text>
+                  </g>
+                  <g transform="translate(0,120)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.2</text>
+                  </g>
+                  <g transform="translate(0,90)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.4</text>
+                  </g>
+                  <g transform="translate(0,60)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.6</text>
+                  </g>
+                  <g transform="translate(0,30)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">0.8</text>
+                  </g>
+                  <g transform="translate(0,0)" style="opacity: 1;">
+                    <line class="tick" x2="601.5600000000001" y2="0"></line>
+                    <text x="-10" y="0" dy=".32em" style="text-anchor: end;">1.0</text>
+                  </g>
+                  <path class="domain" d="M601.5600000000001,0H0V150H601.5600000000001"></path>
+                </g>
+                <path class="line read" d="M592.8339683252227,150L601.5600000000001,150"></path>
+                <path class="line write" d="M592.8339683252227,150L601.5600000000001,150"></path>
+                <line class="line dash" style="display: none;"></line>
+                <defs>
+                  <filter id="drop-shadow" height="120%">
+                    <feGaussianBlur in="SourceAlpha" result="blur"></feGaussianBlur>
+                    <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+                    <feMerge>
+                      <feMergeNode in="offsetBlur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g class="chart-tooltip" style="display: none;">
+                  <rect dy="1em" width="210" style="stroke: #eeeeee; fill: #ffffff; filter: url(#drop-shadow);" height="60"></rect>
+                  <text class="datetime" x="5" y="15" style="font-weight: bold;"></text>
+                  <text class="unit" x="145" y="15">单位: B/s</text>
+                  <circle class="read" r="3" transform="translate(10, 32)"></circle>
+                  <text x="20" y="36">读:</text>
+                  <text x="38" y="36" style="font-weight: bold;">0</text>
+                  <circle class="write" r="3" transform="translate(10, 50)"></circle>
+                  <text x="20" y="54">写:</text>
+                  <text x="38" y="54" style="font-weight: bold;">0</text>
+                </g>
+                <rect class="overlay" width="601.5600000000001" height="150"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% end %}
