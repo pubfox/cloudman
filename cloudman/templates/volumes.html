@@ -39,15 +39,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="vol-7sl0us9s">
+          {% for volume in volumes %}
+          <tr id="{{ volume.id }}">
             <td class="checkbox"><input type="checkbox"></td>
-            <td><a class="id" href="/volumes/vol-7sl0us9s/" data-permalink="">vol-7sl0us9s</a></td>
-            <td>t</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td><a class="id" href="/volumes/{{ volume.id }}/" data-permalink="">{{ volume.id }}</a></td>
+            <td>{{ volume.name }}</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; {{ volume.status }}</td>
             <td></td>
-            <td>10</td>
+            <td>{{ volume.size }}</td>
             <td class="time">几秒钟</td>
           </tr>
+          {% end %}
         </tbody>
         <tfoot></tfoot>
       </table>

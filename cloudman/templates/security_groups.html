@@ -29,18 +29,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="sg-eawqo887">
+          {% for security_group in security_groups %}
+          <tr id="{{ security_group.id }}">
             <td class="checkbox"><input type="checkbox"></td>
-            <td><a class="id" href="/security_groups/sg-eawqo887/" data-permalink="">sg-eawqo887</a></td>
-            <td>ttt</td>
+            <td><a class="id" href="/security_groups/{{ security_group.id }}/" data-permalink="">{{ security_group.id }}</a></td>
+            <td>{{ security_group.name }}</td>
             <td class="time">2013-10-25 14:32:31</td>
           </tr>
-          <tr id="sg-wnglmnje">
-            <td class="checkbox"><input type="checkbox"></td>
-            <td><a class="id" href="/security_groups/sg-wnglmnje/" data-permalink="">sg-wnglmnje</a><span class="tooltip" title="缺省防火墙，不可以删除"><span class="icon-default"></span></span></td>
-            <td>缺省防火墙</td>
-            <td class="time">2013-10-24 14:54:28</td>
-          </tr>
+          {% end %}
         </tbody>
         <tfoot></tfoot>
       </table>

@@ -42,20 +42,22 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="eip-a0fqazrn">
+          {% for floating_ip in floating_ips %}
+          <tr id="{{ floating_ip.id }}">
             <td class="checkbox"><input type="checkbox"></td>
-            <td><a class="id" href="/eips/eip-a0fqazrn/" data-permalink="">eip-a0fqazrn</a></td>
-            <td>t</td>
-            <td>117.121.25.180</td>
+            <td><a class="id" href="/eips/{{ floating_ip.id }}/" data-permalink="">{{ floating_ip.id }}</a></td>
+            <td>{{ floating_ip.id }}</td>
+            <td>{{ floating_ip.ip }}</td>
             <td>
               <div class="icp-codes"></div>
             </td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; {{ floating_ip.id }}</td>
             <td></td>
             <td>1</td>
             <td>BGP多线</td>
             <td class="time">11 分钟</td>
           </tr>
+          {% end %}
         </tbody>
         <tfoot></tfoot>
       </table>

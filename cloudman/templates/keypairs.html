@@ -37,20 +37,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="kp-5hnzkm5d">
+          {% for keypair in keypairs %}
+          <tr id="{{ keypair.id }}">
             <td class="checkbox"><input type="checkbox"></td>
-            <td><a class="id" href="/keypairs/kp-5hnzkm5d/" data-permalink="">kp-5hnzkm5d</a></td>
-            <td>ttttt</td>
+            <td><a class="id" href="/keypairs/{{ keypair.id }}/" data-permalink="">{{ keypair.id }}</a></td>
+            <td>{{ keypair.name }}</td>
             <td>ssh-dss</td>
             <td class="time">2013-10-25 14:35:45</td>
           </tr>
-          <tr id="kp-plufg6xg">
-            <td class="checkbox"><input type="checkbox"></td>
-            <td><a class="id" href="/keypairs/kp-plufg6xg/" data-permalink="">kp-plufg6xg</a></td>
-            <td>ttt</td>
-            <td>ssh-rsa</td>
-            <td class="time">2013-10-25 14:35:25</td>
-          </tr>
+          {% end %}
         </tbody>
         <tfoot></tfoot>
       </table>

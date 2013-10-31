@@ -43,96 +43,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="arch201310x64">
-            <td><a class="id" href="/images/system/arch201310x64/" data-permalink="">arch201310x64</a></td>
-            <td>Arch Linux 2013.10 64bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
+          {% for image in images %}
+          <tr id="{{ image.id }}">
+            <td><a class="id" href="/images/system/{{ image.id }}/" data-permalink="">{{ image.id }}</a></td>
+            <td>{{ image.name }}</td>
+            <td class="available"><span class="icon-status icon-available"></span>&nbsp; {{ image.status }}</td>
             <td>20</td>
             <td>linux</td>
             <td>公用</td>
             <td class="time" title="2013-10-20 23:55:45">5 天</td>
           </tr>
-          <tr id="saucysrvx64">
-            <td><a class="id" href="/images/system/saucysrvx64/" data-permalink="">saucysrvx64</a></td>
-            <td>Ubuntu Server 13.10 64bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>20</td>
-            <td>linux</td>
-            <td>公用</td>
-            <td class="time" title="2013-10-20 00:15:45">6 天</td>
-          </tr>
-          <tr id="centos63x64">
-            <td><a class="id" href="/images/system/centos63x64/" data-permalink="">centos63x64</a></td>
-            <td>CentOS 6.3 64bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>20</td>
-            <td>linux</td>
-            <td>公用</td>
-            <td class="time" title="2013-10-16 01:06:52">10 天</td>
-          </tr>
-          <tr id="opensuse12x64">
-            <td><a class="id" href="/images/system/opensuse12x64/" data-permalink="">opensuse12x64</a></td>
-            <td>openSUSE 12.3 64bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>20</td>
-            <td>linux</td>
-            <td>公用</td>
-            <td class="time" title="2013-10-07 14:16:00">18 天</td>
-          </tr>
-          <tr id="centos64x86">
-            <td><a class="id" href="/images/system/centos64x86/" data-permalink="">centos64x86</a></td>
-            <td>CentOS 6.4 32bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>20</td>
-            <td>linux</td>
-            <td>公用</td>
-            <td class="time" title="2013-10-02 00:16:13">24 天</td>
-          </tr>
-          <tr id="win2k8r2eeen">
-            <td><a class="id" href="/images/system/win2k8r2eeen/" data-permalink="">win2k8r2eeen</a></td>
-            <td>Windows Server 2008 R2 英文 企业版 64位 未激活</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>50</td>
-            <td>windows</td>
-            <td>公用</td>
-            <td class="time" title="2013-08-21 15:19:58">2 个月</td>
-          </tr>
-          <tr id="win2k8r2eechs">
-            <td><a class="id" href="/images/system/win2k8r2eechs/" data-permalink="">win2k8r2eechs</a></td>
-            <td>Windows Server 2008 R2 简体中文 企业版 64位 未激活</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>50</td>
-            <td>windows</td>
-            <td>公用</td>
-            <td class="time" title="2013-08-20 09:04:45">2 个月</td>
-          </tr>
-          <tr id="centos58x86">
-            <td><a class="id" href="/images/system/centos58x86/" data-permalink="">centos58x86</a></td>
-            <td>CentOS 5.8 32bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>20</td>
-            <td>linux</td>
-            <td>公用</td>
-            <td class="time" title="2013-08-01 00:46:10">3 个月</td>
-          </tr>
-          <tr id="centos58x64">
-            <td><a class="id" href="/images/system/centos58x64/" data-permalink="">centos58x64</a></td>
-            <td>CentOS 5.8 64bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>20</td>
-            <td>linux</td>
-            <td>公用</td>
-            <td class="time" title="2013-07-31 19:05:25">3 个月</td>
-          </tr>
-          <tr id="centos64x64a">
-            <td><a class="id" href="/images/system/centos64x64a/" data-permalink="">centos64x64a</a></td>
-            <td>CentOS 6.4 64bit</td>
-            <td class="available"><span class="icon-status icon-available"></span>&nbsp; 可用</td>
-            <td>20</td>
-            <td>linux</td>
-            <td>公用</td>
-            <td class="time" title="2013-06-23 23:03:13">4 个月</td>
-          </tr>
+          {% end %}
         </tbody>
         <tfoot></tfoot>
       </table>

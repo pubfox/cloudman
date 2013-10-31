@@ -48,17 +48,19 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="i-tb8q8p5m">
+          {% for instance in instances %}
+          <tr id="{{ instance.id }}">
             <td class="checkbox"><input type="checkbox"></td>
-            <td><a class="id" href="/instances/i-tb8q8p5m/" data-permalink="">i-tb8q8p5m</a><a class="btn-connect icon-instance" href="#" title="显示终端界面"></a></td>
-            <td>t</td>
-            <td class="running"><span class="icon-status icon-running"></span>&nbsp; 正常运行</td>
-            <td><a class="id" href="/images/system/precisex64a/" data-permalink="">precisex64a</a></td>
+            <td><a class="id" href="/instances/{{ instance.id }}/" data-permalink="">{{ instance.metadata }}</a><a class="btn-connect icon-instance" href="#" title="显示终端界面"></a></td>
+            <td>{{ instance.name }}</td>
+            <td class="running"><span class="icon-status icon-running"></span>&nbsp; {{ instance.status }}</td>
+            <td><a class="id" href="/images/system/precisex64a/" data-permalink="">{{ instance.image['id'] }}</a></td>
             <td><span class="id">(基础网络) / 10.50.27.140</span><br></td>
-            <td></td>
-            <td>小型A</td>
+            <td>{{ instance.networks }}</td>
+            <td>{{ instance.flavor['id'] }}</td>
             <td class="time">2 小时</td>
           </tr>
+          {% end %}
         </tbody>
         <tfoot></tfoot>
       </table>
