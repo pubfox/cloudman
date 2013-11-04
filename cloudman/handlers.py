@@ -91,8 +91,23 @@ class InstancesHandler(BaseHandler):
         kwargs = dict(page_title='主机')
         instances = self.client.servers.list()
         kwargs['instances'] = instances
-        fr
         self.render('instances.html', **kwargs)
+
+class InstanceViewTextHandler(BaseHandler):
+    @tornado.web.authenticated
+    def get(self, id):
+        kwargs = dict(page_title='主机View')
+        instance = self.client.servers.get(id)
+        kwargs['instance'] = instance
+        self.render('instance.text.html', **kwargs)
+
+class InstanceViewGraphHandler(BaseHandler):
+    @tornado.web.authenticated
+    def get(self, id):
+        kwargs = dict(page_title='主机View')
+        instance = self.client.servers.get(id)
+        kwargs['instance'] = instance
+        self.render('instance.graph.html', **kwargs)
 
 class VolumesHandler(BaseHandler):
     def get(self):
@@ -116,21 +131,48 @@ class EipsHandler(BaseHandler):
         kwargs = dict(page_title='公网IP')
         floating_ips = self.client.floating_ips.list()
         kwargs['floating_ips'] = floating_ips
+        f = floating_ips[0]
+        pp(dir(f))
         self.render('eips.html', **kwargs)
+
+class EipViewHandler(BaseHandler):
+    def get(self, id):
+        kwargs = dict(page_title='公网IPView')
+        floating_ip = self.client.floating_ips.get(id)
+        kwargs['floating_ip'] = floating_ip
+        self.render('eip.html', **kwargs)
 
 class SecuritygroupsHandler(BaseHandler):
     def get(self):
         kwargs = dict(page_title='防火墙')
         security_groups = self.client.security_groups.list()
         kwargs['security_groups'] = security_groups
+        s = security_groups[0]
+        pp(dir(s))
         self.render('security_groups.html', **kwargs)
+
+class SecuritygroupViewHandler(BaseHandler):
+    def get(self, id):
+        kwargs = dict(page_title='防火墙View')
+        security_group = self.client.security_groups.get(id)
+        kwargs['security_group'] = security_group
+        self.render('security_group.html', **kwargs)
 
 class KeypairsHandler(BaseHandler):
     def get(self):
         kwargs = dict(page_title='SSH密钥')
         keypairs = self.client.keypairs.list()
         kwargs['keypairs'] = keypairs
+        k = keypairs[0]
+        print k.fingerprint, k.human_id, k.id, k.name, k.public_key
         self.render('keypairs.html', **kwargs)
+
+class KeypairViewHandler(BaseHandler):
+    def get(self, id):
+        kwargs = dict(page_title='SSH密钥View')
+        keypair = self.client.keypairs.get(id)
+        kwargs['keypair'] = keypair
+        self.render('keypair.html', **kwargs)
 
 class ImagesPublicHandler(BaseHandler):
     def get(self):
@@ -143,6 +185,20 @@ class ImagesPrivateHandler(BaseHandler):
     def get(self):
         kwargs = dict(page_title='自有映像')
         self.render('images.private.html', **kwargs)
+
+class ImagePublicViewHandler(BaseHandler):
+    def get(self, id):
+        kwargs = dict(page_title='系统映像View')
+        image = self.client.images.get(id)
+        kwargs['image'] = image
+        self.render('image.public.html', **kwargs)
+
+class ImagePrivateViewHandler(BaseHandler):
+    def get(self, id):
+        kwargs = dict(page_title='自有映像View')
+        image = self.client.images.get(id)
+        kwargs['image'] = image
+        self.render('image.private.html', **kwargs)
 
 class ActivitiesHandler(BaseHandler):
     def get(self):

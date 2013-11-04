@@ -5,8 +5,8 @@
 <div class="content" style="">
   <div id="instances" class="wrapper permalink">
     <div class="topbar">
-      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/instances/" data-permalink="">instances</a><a class="level" href="/console/instances/i-cfk0kie6/" data-permalink="">i-cfk0kie6</a></div>
-      <div class="view-types"><span class="title">查看方式：</span><a class="view-type type-text current" href="#" data-type="text"><span class="icon icon-text"></span>文字</a><a class="view-type type-graph" href="#" data-type="graph"><span class="icon icon-graph"></span>图形</a></div>
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/instances/" data-permalink="">instances</a><a class="level" href="/instances/{{ instance.id }}/" data-permalink="">{{ instance.id }}</a></div>
+      <div class="view-types"><span class="title">查看方式：</span><a class="view-type type-text current" href="/instances/{{ instance.id }}/view/text/" data-type="text"><span class="icon icon-text"></span>文字</a><a class="view-type type-graph" href="/instances/{{ instance.id }}/view/graph/" data-type="graph"><span class="icon icon-graph"></span>图形</a></div>
     </div>
     <div class="grid_8 description">
       <div class="detail-item">
@@ -20,15 +20,15 @@
         </div>
         <dl class="dl-horizontal">
           <dt>ID</dt>
-          <dd><span class="id">i-cfk0kie6</span></dd>
+          <dd><span class="id">{{ instance.id }}</span></dd>
           <dt>名称</dt>
-          <dd>tt</dd>
+          <dd>{{ instance.name }}</dd>
           <dt>描述</dt>
           <dd></dd>
           <dt>状态</dt>
-          <dd class="stopped"><span class="icon-status icon-stopped"></span>&nbsp; 已关机</dd>
+          <dd class="stopped"><span class="icon-status icon-stopped"></span>&nbsp; {{ instance.status }}</dd>
           <dt>创建时间</dt>
-          <dd class="time">2013-10-31 11:21:21</dd>
+          <dd class="time">{{ instance.created }}</dd>
           <dt>运行时间</dt>
           <dd class="time">8 分钟</dd>
         </dl>
@@ -44,16 +44,16 @@
         </div>
         <dl class="dl-horizontal">
           <dt>类型</dt>
-          <dd>小型A</dd>
+          <dd>{{ instance.flavor['id'] }}</dd>
           <dt>映像ID</dt>
-          <dd><a class="id" href="/console/images/system/precisex64a/" data-permalink="">precisex64a</a></dd>
+          <dd><a class="id" href="/images/system/{{ instance.image['id'] }}/" data-permalink="">{{ instance.image['id'] }}</a></dd>
           <dt>CPU个数</dt>
           <dd>1</dd>
           <dt>内存</dt>
           <dd>512MB</dd>
           <dt>SSH密钥&nbsp;<a href="https://docs.qingcloud.com/faq/index.html#ssh" target="_blank" title="如何使用SSH密钥来访问主机？">(?)</a></dt>
           <dd>
-            <div class="ids" data-id="kp-j0ktu9t1"><a class="id" href="/console/keypairs/kp-j0ktu9t1/" data-permalink="">kp-j0ktu9t1</a><a class="btn-detach-keypair icon-close" href="#"></a></div>
+            <div class="ids" data-id="kp-j0ktu9t1"><a class="id" href="/keypairs/kp-j0ktu9t1/" data-permalink="">kp-j0ktu9t1</a><a class="btn-detach-keypair icon-close" href="#"></a></div>
             <br>
           </dd>
         </dl>
@@ -72,12 +72,12 @@
           <dd></dd>
           <dt>硬盘</dt>
           <dd>
-            <div class="ids" data-id="vol-a0brpskf"><a class="id" href="/console/volumes/vol-a0brpskf/" data-permalink="">vol-a0brpskf</a><a class="btn-detach-volume icon-close" href="#"></a></div>
+            <div class="ids" data-id="vol-a0brpskf"><a class="id" href="/volumes/vol-a0brpskf/" data-permalink="">vol-a0brpskf</a><a class="btn-detach-volume icon-close" href="#"></a></div>
             <br>
           </dd>
           <dt>网络</dt>
           <dd>
-            <div class="ids"><a class="id" href="/console/networks/vxnets/vxnet-dpt9wmi/" data-permalink="">(tt) / 52:54:fb:94:6e:02 / 192.168.1.2</a><a class="btn-leave icon-close" href="#" data-id="vxnet-dpt9wmi"></a></div>
+            <div class="ids"><a class="id" href="/networks/vxnets/vxnet-dpt9wmi/" data-permalink="">(tt) / 52:54:fb:94:6e:02 / 192.168.1.2</a><a class="btn-leave icon-close" href="#" data-id="vxnet-dpt9wmi"></a></div>
             <br>
           </dd>
           <dt>公网IP</dt>
@@ -113,36 +113,36 @@
                 <span href="#" class="icon icon-action icon-CaptureInstance"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CaptureInstance">制作新映像</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:26:16</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 10秒</span>
                 <dl class="dl-horizontal">
                   <dt>主机 :</dt>
-                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dd><a class="id" href="/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
                   <dt>映像 :</dt>
-                  <dd><a class="id" href="/console/images/img-8ghrj3cr/">img-8ghrj3cr</a></dd>
+                  <dd><a class="id" href="/images/img-8ghrj3cr/">img-8ghrj3cr</a></dd>
                 </dl>
               </li>
               <li class="activity-item successful on" id="j-qlpn0k66">
                 <span href="#" class="icon icon-action icon-StopInstances"><span class="arrow"></span></span><a class="message" href="#" data-job-action="StopInstances">关机</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:25:55</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 8秒</span>
                 <dl class="dl-horizontal">
                   <dt>主机 :</dt>
-                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dd><a class="id" href="/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
                 </dl>
               </li>
               <li class="activity-item successful on" id="j-zqnjkx01">
                 <span href="#" class="icon icon-action icon-AttachVolumes"><span class="arrow"></span></span><a class="message" href="#" data-job-action="AttachVolumes">加载硬盘设备</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:22:24</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 2秒</span>
                 <dl class="dl-horizontal">
                   <dt>主机 :</dt>
-                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dd><a class="id" href="/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
                   <dt>硬盘 :</dt>
-                  <dd><a class="id" href="/console/volumes/vol-a0brpskf/">vol-a0brpskf</a></dd>
+                  <dd><a class="id" href="/volumes/vol-a0brpskf/">vol-a0brpskf</a></dd>
                 </dl>
               </li>
               <li class="activity-item successful on" id="j-7quvhe35">
                 <span href="#" class="icon icon-action icon-RunInstances"><span class="arrow"></span></span><a class="message" href="#" data-job-action="RunInstances">创建新主机</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:21:13</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 8秒</span>
                 <dl class="dl-horizontal">
                   <dt>主机 :</dt>
-                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dd><a class="id" href="/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
                   <dt>主机类型:</dt>
                   <dd>小型A</dd>
                   <dt>映像ID:</dt>
-                  <dd><a class="id" href="/console/images/precisex64a/">precisex64a</a></dd>
+                  <dd><a class="id" href="/images/precisex64a/">precisex64a</a></dd>
                 </dl>
               </li>
             </ol>

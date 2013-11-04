@@ -13,6 +13,9 @@ URLS = [
     (r'/', handlers.IndexHandler),
     
     (r'/instances/', handlers.InstancesHandler),
+    (r'/instances/([\w-]+)/', handlers.InstanceViewTextHandler),
+    (r'/instances/([\w-]+)/view/text/', handlers.InstanceViewTextHandler),
+    (r'/instances/([\w-]+)/view/graph/', handlers.InstanceViewGraphHandler),
     
     (r'/volumes/', handlers.VolumesHandler),
     
@@ -21,14 +24,19 @@ URLS = [
     (r'/networks/vxnets/', handlers.VxnetsHandler),
     
     (r'/eips/', handlers.EipsHandler),
+    (r'/eips/([\w-]+)/', handlers.EipViewHandler),
     
     (r'/security_groups/', handlers.SecuritygroupsHandler),
+    (r'/security_groups/([\w-]+)/', handlers.SecuritygroupViewHandler),
     
     (r'/keypairs/', handlers.KeypairsHandler),
+    (r'/keypairs/([\w-]+)/', handlers.KeypairViewHandler),
     
     (r'/images/', handlers.ImagesPublicHandler),
     (r'/images/system/', handlers.ImagesPublicHandler),
+    (r'/images/system/([\w-]+)/', handlers.ImagePublicViewHandler),
     (r'/images/self/', handlers.ImagesPrivateHandler),
+    (r'/images/self/([\w-]+)/', handlers.ImagePrivateViewHandler),
     
     (r'/activities/', handlers.ActivitiesHandler),
     (r'/activities/all/', handlers.ActivitiesHandler),

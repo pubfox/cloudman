@@ -5,7 +5,7 @@
 <div class="content" style="">
   <div id="keypairs" class="wrapper permalink">
     <div class="topbar">
-      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/keypairs/" data-permalink="">keypairs</a><a class="level" href="/console/keypairs/kp-j0ktu9t1/" data-permalink="">kp-j0ktu9t1</a></div>
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/keypairs/" data-permalink="">keypairs</a><a class="level" href="/keypairs/{{ keypair.id }}/" data-permalink="">{{ keypair.id }}</a></div>
     </div>
     <div class="description">
       <div class="detail-item">
@@ -19,20 +19,20 @@
         </div>
         <dl class="dl-horizontal">
           <dt>ID</dt>
-          <dd><span class="id">kp-j0ktu9t1</span></dd>
+          <dd><span class="id">{{ keypair.id }}</span></dd>
           <dt>名称</dt>
-          <dd>rsa</dd>
+          <dd>{{ keypair.name }}</dd>
           <dt>描述</dt>
           <dd></dd>
           <dt>加密方法</dt>
           <dd>ssh-rsa</dd>
           <dt>公钥</dt>
           <dd>
-            <div class="pub-key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC2yAUhd7KxF6sNlH1yWOQhZZFni3X5NEYkzM3QQkxwJRlrvCKMEN3LWnL2EUqEVXAV8zmBOT+jqdVSgcG630ltxOGIGIunMqA6ud0KaYyn1np+Vd2nACJDTz+k7pTeRCTtYg4slMuv+62PRvjNFUicapmtFDOYYl/N3HHCkrN6B26TM5hOhP0OJGhrWfswZ9TjXtD067R4vz7JF4yr355vODHcTD/fJPU1FTZYz799Fsf2DBn2a3aknVmWH87+tsSepv2vWmfja+Xx6FE/sDFCFK5DQ2LgzzM63v/MPkL9fvyZakZFbrKf9+3x6vJrJGjXPo70bRtnrEO85/65NiW5</div>
+            <div class="pub-key">{{ keypair.public_key }}</div>
           </dd>
           <dt>应用主机</dt>
           <dd>
-            <div class="ids" data-id="i-cfk0kie6"><a class="id" href="/console/instances/i-cfk0kie6/" data-permalink="">i-cfk0kie6</a><a class="btn-detach-keypair icon-close" href="#"></a></div>
+            <div class="ids" data-id="i-cfk0kie6"><a class="id" href="/instances/i-cfk0kie6/" data-permalink="">i-cfk0kie6</a><a class="btn-detach-keypair icon-close" href="#"></a></div>
             <br>
           </dd>
           <dt>创建时间</dt>

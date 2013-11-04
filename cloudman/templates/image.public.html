@@ -5,7 +5,7 @@
 <div class="content" style="">
   <div class="wrapper permalink">
     <div class="topbar">
-      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/images/" data-permalink="">images</a><a class="level" href="/console/images/system/" data-permalink="">system</a><a class="level" href="/console/images/system/arch201310x64/" data-permalink="">arch201310x64</a></div>
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/images/" data-permalink="">images</a><a class="level" href="/images/system/" data-permalink="">system</a><a class="level" href="/images/system/{{ image.id }}/" data-permalink="">{{ image.id }}</a></div>
     </div>
     <div class="description">
       <div class="detail-item">
@@ -14,13 +14,13 @@
         </div>
         <dl class="dl-horizontal">
           <dt>ID</dt>
-          <dd><span class="id">arch201310x64</span></dd>
+          <dd><span class="id">{{ image.id }}</span></dd>
           <dt>名称</dt>
-          <dd>Arch Linux 2013.10 64bit</dd>
+          <dd>{{ image.name }}</dd>
           <dt>描述</dt>
           <dd>默认管理员 root，密码 p12cHANgepwD。新建主机后请务必修改密码！</dd>
           <dt>状态</dt>
-          <dd class="available" width="35%"><span class="icon-status icon-available"></span>&nbsp; 可用</dd>
+          <dd class="available" width="35%"><span class="icon-status icon-available"></span>&nbsp; {{ image.status }}</dd>
           <dt>文件大小</dt>
           <dd>20 G</dd>
           <dt>可见范围</dt>
@@ -28,7 +28,7 @@
           <dt>平台</dt>
           <dd>linux</dd>
           <dt>创建时间</dt>
-          <dd class="time">2013-10-20 23:55:45</dd>
+          <dd class="time">{{ image.created }}</dd>
           <dt>运行时间</dt>
           <dd class="time">11 天</dd>
         </dl>

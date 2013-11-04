@@ -5,7 +5,7 @@
 <div class="content" style="">
   <div id="eips" class="wrapper permalink">
     <div class="topbar">
-      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/eips/" data-permalink="">eips</a><a class="level" href="/console/eips/eip-02yrjr8t/" data-permalink="">eip-02yrjr8t</a></div>
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/eips/" data-permalink="">eips</a><a class="level" href="/eips/{{ floating_ip.id }}/" data-permalink="">{{ floating_ip.id }}</a></div>
     </div>
     <div class="grid_8 description">
       <div class="detail-item">
@@ -19,15 +19,15 @@
         </div>
         <dl class="dl-horizontal">
           <dt>ID</dt>
-          <dd><span class="id">eip-02yrjr8t</span></dd>
+          <dd><span class="id">{{ floating_ip.id }}</span></dd>
           <dt>名称</dt>
-          <dd>tt</dd>
+          <dd>{{ floating_ip.id }}</dd>
           <dt>描述</dt>
           <dd></dd>
           <dt>状态</dt>
           <dd class="associated" width="35%"><span class="icon-status icon-associated"></span>&nbsp; 已分配</dd>
           <dt>地址</dt>
-          <dd>117.121.25.196</dd>
+          <dd>{{ floating_ip.ip }}</dd>
           <dt>ICP备案</dt>
           <dd>
             <div class="icp-codes"></div>
@@ -35,7 +35,7 @@
           <dt>带宽</dt>
           <dd>1 Mbps</dd>
           <dt>应用资源</dt>
-          <dd><a class="rname" href="/console/networks/routers/rtr-70yxd8g9/" data-permalink="">(tt)</a></dd>
+          <dd><a class="rname" href="/networks/routers/rtr-70yxd8g9/" data-permalink="">(tt)</a></dd>
           <dt>IP分组</dt>
           <dd>BGP多线</dd>
           <dt>创建时间</dt>

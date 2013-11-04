@@ -5,7 +5,7 @@
 <div class="content" style="">
   <div class="wrapper permalink">
     <div class="topbar">
-      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/images/" data-permalink="">images</a><a class="level" href="/console/images/self/" data-permalink="">self</a><a class="level" href="/console/images/self/img-8ghrj3cr/" data-permalink="">img-8ghrj3cr</a></div>
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/images/" data-permalink="">images</a><a class="level" href="/images/self/" data-permalink="">self</a><a class="level" href="/images/self/{{ image.id }}/" data-permalink="">{{ image.id }}</a></div>
     </div>
     <div class="description">
       <div class="detail-item">
@@ -19,13 +19,13 @@
         </div>
         <dl class="dl-horizontal">
           <dt>ID</dt>
-          <dd><span class="id">img-8ghrj3cr</span></dd>
+          <dd><span class="id">{{ image.id }}</span></dd>
           <dt>名称</dt>
-          <dd>tt</dd>
+          <dd>{{ image.name }}</dd>
           <dt>描述</dt>
           <dd>用户账号 ubuntu，密码 p12cHANgepwD，拥有 sudo 能力。新建主机后请务必修改密码！</dd>
           <dt>状态</dt>
-          <dd class="available" width="35%"><span class="icon-status icon-available"></span>&nbsp; 可用</dd>
+          <dd class="available" width="35%"><span class="icon-status icon-available"></span>&nbsp; {{ image.status }}</dd>
           <dt>文件大小</dt>
           <dd>20 G</dd>
           <dt>可见范围</dt>
@@ -35,7 +35,7 @@
           <dt>应用主机</dt>
           <dd></dd>
           <dt>创建时间</dt>
-          <dd class="time">2013-10-31 11:26:26</dd>
+          <dd class="time">{{ image.created }}</dd>
           <dt>运行时间</dt>
           <dd class="time">27 分钟</dd>
         </dl>
@@ -69,9 +69,9 @@
                 <span href="#" class="icon icon-action icon-CaptureInstance"><span class="arrow"></span></span><a class="message" href="#" data-job-action="CaptureInstance">制作新映像</a><span class="created"><span class="icon icon-time"></span>&nbsp; 2013-10-31 11:26:16</span><span class="consumed"><span class="icon icon-consumed"></span>&nbsp; 10秒</span>
                 <dl class="dl-horizontal">
                   <dt>主机 :</dt>
-                  <dd><a class="id" href="/console/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
+                  <dd><a class="id" href="/instances/i-cfk0kie6/">i-cfk0kie6</a></dd>
                   <dt>映像 :</dt>
-                  <dd><a class="id" href="/console/images/img-8ghrj3cr/">img-8ghrj3cr</a></dd>
+                  <dd><a class="id" href="/images/img-8ghrj3cr/">img-8ghrj3cr</a></dd>
                 </dl>
               </li>
             </ol>

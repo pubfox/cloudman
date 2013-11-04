@@ -5,12 +5,12 @@
 <div class="content" style="">
   <div id="instances" class="wrapper permalink">
     <div class="topbar">
-      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/console/instances/" data-permalink="">instances</a><a class="level" href="/console/instances/i-cfk0kie6/" data-permalink="">i-cfk0kie6</a></div>
-      <div class="view-types"><span class="title">查看方式：</span><a class="view-type type-text" href="#" data-type="text"><span class="icon icon-text"></span>文字</a><a class="view-type type-graph current" href="#" data-type="graph"><span class="icon icon-graph"></span>图形</a></div>
+      <div class="breadcrumbs"><a class="level-console" href="/" data-permalink=""><span class="icon icon-console"></span></a><a class="level" href="/instances/" data-permalink="">instances</a><a class="level" href="/instances/{{ instance.id }}/" data-permalink="">{{ instance.id }}</a></div>
+      <div class="view-types"><span class="title">查看方式：</span><a class="view-type type-text" href="/instances/{{ instance.id }}/view/text/" data-type="text"><span class="icon icon-text"></span>文字</a><a class="view-type type-graph current" href="/instances/{{ instance.id }}/view/graph/" data-type="graph"><span class="icon icon-graph"></span>图形</a></div>
     </div>
     <div class="grid_16 graph">
       <div class="graph-wrapper">
-        <h2 class="graph-title">Instance: i-cfk0kie6 结构示意图</h2>
+        <h2 class="graph-title">Instance: {{ instance.id }} 结构示意图</h2>
         <div class="grid_4 actions">
           <div class="graph-actions"><a class="btn" href="#"><span class="icon icon-start"></span><span class="text">启动</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-stop"></span><span class="text">关机</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-restart"></span><span class="text">重启</span></a><a class="btn" href="#"><span class="icon icon-modify"></span><span class="text">修改</span></a><a class="btn" href="#"><span class="icon icon-resize"></span><span class="text">更改配置</span></a><a class="btn" href="#"><span class="icon icon-copy"></span><span class="text">复制</span></a><a class="btn" href="#"><span class="icon icon-capture"></span><span class="text">制作成新映像</span></a><a class="btn" href="#"><span class="icon icon-reset"></span><span class="text">重置</span></a><a class="btn btn-danger" href="#"><span class="icon icon-terminate"></span><span class="text">销毁</span></a><a class="btn btn-forbidden" href="#"><span class="icon icon-recover"></span><span class="text">恢复</span></a></div>
         </div>
@@ -19,23 +19,23 @@
             <div class="graph-component component-instance-router">
               <div class="graph-component component-instance-router-network">
                 <div class="graph-component component-router-cloud"></div>
-                <div class="graph-component component-router-eip"><a class="btn-delete" href="#"><span class="icon icon-close"></span></a><span class="icon icon-eip"></span><a class="component-id" href="/console/eips/eip-02yrjr8t/" data-permalink="">117.121.25.196</a></div>
+                <div class="graph-component component-router-eip"><a class="btn-delete" href="#"><span class="icon icon-close"></span></a><span class="icon icon-eip"></span><a class="component-id" href="/eips/eip-02yrjr8t/" data-permalink="">117.121.25.196</a></div>
                 <div class="graph-component component-router-vxnet0"></div>
               </div>
-              <div class="graph-component component-router-sg"><a class="sg-name" href="/console/security_groups/sg-k9e5cunw/" data-permalink="">缺省防火墙</a><a class="btn" href="#"><span class="icon icon-security_groups"></span><span class="text">修改防火墙规则</span></a></div>
-              <div class="graph-component component-router"><span class="private-ip">10.50.14.190</span><a class="router-id" href="/console/networks/routers/rtr-70yxd8g9/view/graph/" data-permalink="">rtr-70yxd8g9</a></div>
+              <div class="graph-component component-router-sg"><a class="sg-name" href="/security_groups/sg-k9e5cunw/" data-permalink="">缺省防火墙</a><a class="btn" href="#"><span class="icon icon-security_groups"></span><span class="text">修改防火墙规则</span></a></div>
+              <div class="graph-component component-router"><span class="private-ip">10.50.14.190</span><a class="router-id" href="/networks/routers/rtr-70yxd8g9/view/graph/" data-permalink="">rtr-70yxd8g9</a></div>
             </div>
-            <div class="graph-component component-managed-vxnet"><a class="vxnet-name" href="/console/networks/vxnets/vxnet-dpt9wmi/" data-permalink="">tt</a><span class="private-ip">192.168.1.2</span></div>
+            <div class="graph-component component-managed-vxnet"><a class="vxnet-name" href="/networks/vxnets/vxnet-dpt9wmi/" data-permalink="">tt</a><span class="private-ip">192.168.1.2</span></div>
           </div>
           <div class="graph-component component-instance connected"><a class="btn-delete" href="#" data-id="vxnet-dpt9wmi"><span class="icon icon-close"></span></a><span class="private-ip"></span><span class="instance-name">tt</span></div>
           <div class="graph-component component-instance-volumes">
             <div class="grid_24 tree">
-              <div class="grid_12 instance-volume component-instance-volume"><a class="btn-delete" href="#" data-id="vol-a0brpskf"><span class="icon icon-close"></span></a><span class="size">10 G</span><a class="volume-name" href="/console/volumes/vol-a0brpskf/" data-permalink="">t</a></div>
+              <div class="grid_12 instance-volume component-instance-volume"><a class="btn-delete" href="#" data-id="vol-a0brpskf"><span class="icon icon-close"></span></a><span class="size">10 G</span><a class="volume-name" href="/volumes/vol-a0brpskf/" data-permalink="">t</a></div>
               <div class="grid_12 component-instance-volume none"><a class="btn" href="#"><span class="icon icon-volumes"></span><span class="text">加载硬盘</span></a></div>
             </div>
           </div>
           <div class="instance-keypairs" style="width: 100px;">
-            <div class="instance-keypair"><span class="icon icon-keypair"></span><span class="name"><a class="keypair-name" href="/console/keypairs/kp-j0ktu9t1/" data-permalink="">rsa</a></span></div>
+            <div class="instance-keypair"><span class="icon icon-keypair"></span><span class="name"><a class="keypair-name" href="/keypairs/kp-j0ktu9t1/" data-permalink="">rsa</a></span></div>
             <a class="btn btn-forbidden" href="#"><span class="icon icon-keypairs"></span><span class="text">加载SSH密钥</span></a>
           </div>
         </div>
@@ -48,22 +48,22 @@
           <table class="info">
             <tbody>
               <tr>
-                <td>ID：<span class="id">i-cfk0kie6</span><a class="btn-connect icon-instance" href="#" title="显示终端界面"></a></td>
+                <td>ID：<span class="id">{{ instance.id }}</span><a class="btn-connect icon-instance" href="#" title="显示终端界面"></a></td>
               </tr>
               <tr>
-                <td>名称：tt</td>
+                <td>名称：{{ instance.name }}</td>
               </tr>
               <tr>
                 <td>描述：</td>
               </tr>
               <tr>
-                <td>状态：<span class="stopped"><span class="icon-status icon-stopped"></span>&nbsp; 已关机</span></td>
+                <td>状态：<span class="stopped"><span class="icon-status icon-stopped"></span>&nbsp; {{ instance.status }}</span></td>
               </tr>
               <tr>
-                <td>映像：<a class="id" href="/console/images/system/precisex64a/" data-permalink="">precisex64a</a></td>
+                <td>映像：<a class="id" href="/images/system/{{ instance.image['id'] }}/" data-permalink="">{{ instance.image['id'] }}</a></td>
               </tr>
               <tr>
-                <td>类型：小型A</td>
+                <td>类型：{{ instance.flavor['id'] }}</td>
               </tr>
               <tr>
                 <td>CPU：1 核</td>
@@ -72,7 +72,7 @@
                 <td>内存：512MB</td>
               </tr>
               <tr>
-                <td>创建时间：<span class="time">2013-10-31 11:21:21</span></td>
+                <td>创建时间：<span class="time">{{ instance.created }}</span></td>
               </tr>
               <tr>
                 <td>运行时间：<span class="time">14 分钟</span></td>
